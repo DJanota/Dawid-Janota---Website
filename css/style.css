@@ -71,12 +71,35 @@ body {
     color: black; }
 
     .about {
-      min-height: 500px;
-      padding: 40px 0 20px;
+      min-height: 650px;
+      padding: 10px 0 20px;
       text-transform: uppercase;
     }
       
-       
+    .fixed {
+      position: sticky;
+      width: 96vw;
+      top: 530px;
+      margin-top: 10px;
+      z-index: 10; }
+      .fixed div {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #b88b58;
+        text-align: center;
+        padding-top: 10px; }
+        .fixed div:hover {
+          transform: scale(1.2);
+          transition: 0.5s; }
+      .fixed div:first-child {
+        margin-left: 5vw;
+        float: left; }
+      .fixed div:nth-child(2) {
+        margin-right: 5vw;
+        float: right; }     
 
 .features-section {
   padding-top: 8vh;
