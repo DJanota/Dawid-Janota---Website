@@ -17,7 +17,7 @@ body {
 }
   .hero .hero-caption {
     padding-top: 15vh;
-    text-align: center; }
+    text-align: center;  }
 
 .logo img {
   width: 300px; 
@@ -66,13 +66,17 @@ body {
   border-style: none;
   border-radius: 25px; }
   .btn-basic:focus, .btn-basic:hover {
-    background: -webkit-radial-gradient(left, #fff, #b88b58); }
-    .btn:hover * {
-      font-size: 18px;
-      transition: 0.3s; 
     border: 1px solid black;
     background-color: white;
     color: black; }
+
+    .about {
+      min-height: 500px;
+      padding: 40px 0 20px;
+      text-transform: uppercase;
+    }
+      
+       
 
 .features-section {
   padding-top: 8vh;
@@ -173,9 +177,9 @@ body {
   .social-button i {
     font-size: 20px;
     color: #c6cacc; }
-  .social-button:active {
-    background: #e84545; }
-    .social-button:active i {
+  .social-button:hover {
+    background: #B88B58; }
+    .social-button:hover i {
       color: white; }
 
 .carousel-section .carousel-indicators li {
@@ -246,7 +250,6 @@ body {
   color: white; }
   .footer-section .social-button {
     color: white;
-    backgroundl: none;
     border: 1px solid white;
     margin-top: 1vh; }
     .footer-section .social-button i {
