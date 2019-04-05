@@ -253,6 +253,42 @@ body {
       font-size: 14px;
       line-height: 14px; } }
 
+      .contact {
+        padding: 40px 0;
+        text-transform: uppercase; }
+        .contact .ct-box {
+          width: 550px;
+          margin: 0 auto; }
+          .contact .ct-box .btn {
+            margin-bottom: 30px;
+            width: 192px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 35px;
+            color: #fff; }
+            .contact .ct-box .btn:hover {
+              font-size: 18px;
+              transition: 0.3s; }
+          .contact .ct-box form {
+            margin: 60px 0 40px; }
+            .contact .ct-box form input {
+              border: none;
+              border-bottom: 2px solid #ccc;
+              -webkit-box-shadow: none;
+              box-shadow: none; }
+            .contact .ct-box form #name {
+              width: 47%;
+              margin-right: 6%;
+              float: left; }
+            .contact .ct-box form #Email {
+              width: 47%; }
+            .contact .ct-box form #subject {
+              margin-top: 30px; }
+            .contact .ct-box form #massage {
+              margin-top: 60px; }
+
 .download-section {
   padding-top: 10vh;
   padding-bottom: 10vh; }
