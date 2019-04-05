@@ -74,7 +74,10 @@ body {
       min-height: 650px;
       padding: 10px 0 20px;
       text-transform: uppercase;
+      background-color: #fff;
     }
+
+    
       
     .fixed {
       position: sticky;
