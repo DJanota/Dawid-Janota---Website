@@ -77,8 +77,7 @@ body {
       background-color: #fff;
     }
 
-    
-      
+
     .fixed {
       position: sticky;
       width: 96vw;
@@ -174,25 +173,6 @@ body {
   color: white; }
   .middle h5 {
     text-transform: uppercase; }
-
-.team-section {
-  padding-top: 12vh;
-  padding-bottom: 12vh; }
-  .team-section img {
-    padding-bottom: 1vh;
-    padding-top: 3vh;
-    margin: 0 auto; }
-  .team-section h4 {
-    font-size: 22px;
-    font-weight: 400; }
-  .team-section h6 {
-    color: #e84545;
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase; }
-  .team-section p {
-    color: #6c7279;
-    font-size: 14px; }
 
 .social-button {
   margin-top: 20px;
