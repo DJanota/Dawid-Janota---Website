@@ -101,7 +101,9 @@ body {
         float: left; }
       .fixed div:nth-child(2) {
         margin-right: 5vw;
-        float: right; }     
+        float: right; }
+        
+        
 
 .features-section {
   padding-top: 8vh;
