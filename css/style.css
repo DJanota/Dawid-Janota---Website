@@ -71,7 +71,7 @@ body {
     color: black; }
 
     .about {
-      min-height: 650px;
+      
       padding: 10px 0 20px;
       text-transform: uppercase;
       background-color: #fff;
@@ -103,143 +103,109 @@ body {
         margin-right: 5vw;
         float: right; }
 
-
+        .honey {
+          background-color: #1A1A1A;
+          padding-bottom: 150px;
+          padding-top: 100px;
+        }
+       
+        .wrapper {
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
         
-        
+        #hexGrid {
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%;
+          padding-bottom: 5.5%;
+          padding-top: 5.5%;
+          overflow: hidden;
+          list-style-type: none;
+        }
         
         .hex {
-          width:150px;
-          height:86px;
-          background-color: #ccc;
-          background-repeat: no-repeat;
-          background-position: 50% 50%;			
-          background-size: auto 173px;							
           position: relative;
-          float:left;
-          margin:25px 5px;
-          text-align:center;
-          zoom:1;
+          visibility: hidden;
+          outline: 1px solid transparent;
+          width: 25%;
         }
-            
-          .hex.hex-gap {
-            margin-left: 86px;
-          }
-          
-          .hex a {
-            display:block;
-            width: 100%;
-            height:100%;
-            text-indent:-9999em;
-            position:absolute;
-            top:0;
-            left:0;
-          }
         
-          .hex .corner-1,
-          .hex .corner-2,
-          .hex .corner-3
-          {
-            position: absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background: inherit;								
-            z-index:-2;						
-            overflow:hidden;		
-            backface-visibility: hidden;			
-          }
-          
-          .hex .corner-1 {
-            z-index:-1;
-            transform: rotate(60deg);
-          }
-          
-          .hex .corner-2 {
-            transform: rotate(-60deg);
-          }
-
-          .hex .corner-3 {
-            transform: rotate(-60deg);
-          }
-          
-          .hex .corner-1:before,
-          .hex .corner-2:before,
-          .hex .corner-3:before
-          {
-            width: 173px;
-            height:	173px;
-            content: '';
-            position: absolute;
-            background: inherit;
-            top:0;
-            left: 0;
-            z-index: 1;
-            background: inherit;
-            background-repeat:no-repeat;
-            backface-visibility: hidden;				  
-          }			
-          
+        .hex:nth-child(7n + 5) {
+          margin-left: 12.5%;
+        }
         
-          .hex .corner-1:before {
-            transform: rotate(-60deg) translate(-87px, 0px);	
-            transform-origin: 0 0;
-          }			
-          
-          .hex .corner-2:before {
-            transform: rotate(60deg) translate(-48px, -11px);	
-            bottom:0;
-          }
-          
-          .hex .corner-3:before {
-            transform: rotate(60deg) translate(-48px, -11px);	
-            bottom:0;
-          }		
+        .hex::after {
+          content: "";
+          display: block;
+          padding-bottom: 86.602%;
+        }
         
+        .hexFront, .hexBack {
+          perspective: 800;
+          transform-style: preserve-3d;
+          transform: rotateY(0deg);
+          backface-visibility: hidden;
+          transition: transform 1s ease-out, opacity 0.5s ease-out;
+        }
         
-          
-          /* Custom styles*/
-          .hex .inner {		
-            color:#eee;
-          }
-          
-          .hex h4 {
-            font-family: 'Josefin Sans', sans-serif;		
-            margin:0;			
-          }
-          
-          .hex hr {
-            border:0;
-            border-top:1px solid #eee;
-            width:60%;
-            margin:15px auto;
-          }
-          
-          .hex p {
-            font-size:16px;
-            font-family: 'Kotta One', serif;
-            width:80%;
-            margin:0 auto;
-          }
+        .hexBack {
+          opacity: 0;
+          transform: rotateY(180deg);
+        }
         
-          .hex.hex-1 {
-            background: #74cddb;
-          }
-          
-          .hex.hex-2 {
-            background: #f5c53c;
-          }
-          
-          .hex.hex-3 {
-            background: #80b971;
-          }
+        .hexIn {
+          position: absolute;
+          width: 96%;
+          padding-bottom: 110.851%;
+          margin: 0 2%;
+          overflow: hidden;
+          visibility: hidden;
+          outline: 1px solid transparent;
+          transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+        }
+        
+        .hexInner {
+          position: absolute;
+          visibility: visible;
+          outline: 1px solid transparent;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+        }
+        
+        .hexInner img {
+          left: -100%;
+          right: -100%;
+          width: auto;
+          height: 100%;
+          margin: 0 auto;
+          transform: rotate3d(0, 0, 0, 0deg);
+          filter: grayscale(100%);
+          transition: 4s;
+        }
+        
+        .hexInner img:hover {
+          filter: grayscale(0%);
+          transition: 0s;
+        }
+        
+        .hexInner p {
+          color: black;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 2vw;
+          margin: 0;
+        }
 
-
-
-
-.features-section {
-  padding-top: 8vh;
-  padding-bottom: 8vh; }
   .features-section h6 {
     text-transform: uppercase;
     font-weight: 700;
