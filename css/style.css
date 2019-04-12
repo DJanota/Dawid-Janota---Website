@@ -28,7 +28,8 @@ body {
 .navbar-default {
   padding-top: 35px;
   background: none;
-  border: none; }
+  border: none;
+ }
   .navbar-default .navbar-nav li {
     margin: 0 15px; }
     .navbar-default .navbar-nav li a {
@@ -36,7 +37,8 @@ body {
       font-weight: 400;
       color: white; }
       .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
-        color: #B88B58; }
+        color: #B88B58;
+       }
 
 .hero-heading {
   max-width: 1200px;
