@@ -79,6 +79,70 @@ body {
       background-color: #fff;
     }
 
+    /* === OUR TEAM === */
+
+.team .container {
+	width: 100%;
+	max-width: 1000px;
+  text-align: center;
+}
+
+.radius-image {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.radius-image img {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+  	display: block;
+}
+
+.team .layer {
+	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	border-radius: 50%;
+  	top: 0;
+  	left: 0;
+  	cursor: pointer;
+  	text-align: center;
+  	transition: .8s;
+}
+
+.team .layer:hover {
+	background: rgba(0, 0, 0, .5);
+}
+
+.layer p {
+  	color: #FFFFFF;
+  	font-weight: 700;
+  	font-size: 20px;
+  	text-align: center;
+  	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: .8s;
+}
+
+.layer:hover p {
+	opacity: 1;
+}
+
+.team .name p {
+  	color: #5C5C5A;
+  	font-size: 25px;
+  	font-weight: 700;
+  	text-align: center;
+ }
+
+/* === OUR TEAM === */
+
 
     .fixed {
       position: sticky;
@@ -290,6 +354,13 @@ body {
     .social-button:hover i {
       color: white; }
 
+.carousel-section {
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 500px;
+
+}
+
 .carousel-section .carousel-indicators li {
   border: none;
   background-color: rgba(255, 255, 255, 0.2); }
@@ -306,7 +377,7 @@ body {
   max-height: 500px; }
 
 .carousel-section .carousel-caption {
-  padding-bottom: 12vh; }
+  padding-bottom: -100px; }
   .carousel-section .carousel-caption h3 {
     font-size: 36px;
     font-style: italic;
