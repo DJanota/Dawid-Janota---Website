@@ -72,12 +72,7 @@ body {
     background-color: white;
     color: black; }
 
-    .about {
-      
-      padding: 10px 0 20px;
-      text-transform: uppercase;
-      background-color: #fff;
-    }
+  
 
     /* === OUR TEAM === */
 
@@ -354,13 +349,7 @@ body {
     .social-button:hover i {
       color: white; }
 
-.carousel-section {
-  margin-top: 10px;
-  text-align: center;
-  margin-left: 500px;
-
-}
-
+    
 .carousel-section .carousel-indicators li {
   border: none;
   background-color: rgba(255, 255, 255, 0.2); }
@@ -370,7 +359,8 @@ body {
 
 .carousel-section .carousel-inner img {
   width: 100%;
-  max-height: 500px; }
+  max-height: 500px;
+ }
 
 .carousel-section .carousel-image {
   width: 100%;
