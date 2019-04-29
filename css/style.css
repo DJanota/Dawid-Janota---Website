@@ -203,6 +203,7 @@ body {
           display: block;
           padding-bottom: 86.602%;
         }
+
         
         .hexFront, .hexBack {
           perspective: 800;
@@ -348,7 +349,6 @@ body {
     background: #B88B58; }
     .social-button:hover i {
       color: white; }
-
     
 .carousel-section .carousel-indicators li {
   border: none;
@@ -438,10 +438,6 @@ body {
               margin-top: 30px; }
             .contact .ct-box form #massage {
               margin-top: 60px; }
-
-              
-              
-     
 
 .download-section {
   padding-top: 10vh;
