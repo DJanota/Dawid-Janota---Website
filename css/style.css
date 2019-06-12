@@ -2,6 +2,10 @@ body {
     font-family: "Montserrat";
 }
 
+
+
+/*jumborton*/
+
 .padding-alignment {
     padding: 0;
 }
@@ -16,16 +20,24 @@ body {
     background-color: #000000;
 }
 
+/*menu*/
+
 .hero .hero-caption {
     padding-top: 15vh;
     text-align: center;
 }
+
+
+/*logo*/
 
 .logo img {
     width: 300px;
     height: 100px;
     margin-left: 70px;
 }
+
+
+/*menu*/
 
 .navbar-default {
     padding-top: 35px;
@@ -37,17 +49,24 @@ body {
     margin: 0 15px;
 }
 
+
+/*menu*/
+
+
 .navbar-default .navbar-nav li a {
     font-style: normal;
     font-weight: 400;
     color: white;
-    position: fixed;
+    position: sticky;
 }
 
 .navbar-default .navbar-nav li a:focus,
 .navbar-default .navbar-nav li a:hover {
     color: #B88B58;
 }
+
+
+/*prof webs*/
 
 .hero-heading {
     max-width: 1200px;
@@ -70,6 +89,10 @@ body {
     margin: 2vh 10%;
 }
 
+
+/*guziki*/
+
+
 .btn-basic {
     text-transform: uppercase;
     margin-top: 5vh;
@@ -89,6 +112,9 @@ body {
     background-color: white;
     color: black;
 }
+
+
+/*about me*/
 
 .aboutme {
     text-align: center;
@@ -122,6 +148,10 @@ body {
 }
 
 
+
+/*kolo przycisk*/
+
+
 .fixed {
     position: sticky;
     width: 96vw;
@@ -151,10 +181,10 @@ body {
     float: left;
 }
 
-.fixed div:nth-child(2) {
-    margin-right: 5vw;
-    float: right;
-}
+
+
+/*honey*/
+
 
 .honey {
     background-color: #1A1A1A;
@@ -261,30 +291,20 @@ body {
     margin: 0;
 }
 
-.features-section h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px;
-}
 
-.features-section p {
-    color: #6c7279;
-}
 
-.features-section .feature {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-}
+/*jumborton*/
 
 @media screen and (max-width: 970px) {
     .hero-heading h1 {
         font-size: 50px;
+        margin-top: auto;
     }
 
-    .hero-heading p {
-        font-size: 16px;
-    }
 }
+
+
+/*jumbortion*/
 
 @media screen and (max-width: 768px) {
     .hero {
@@ -293,10 +313,6 @@ body {
 
     .hero-heading h1 {
         font-size: 34px;
-    }
-
-    .hero-heading p {
-        font-size: 14px;
     }
 
     .team-section h4 {
@@ -308,6 +324,12 @@ body {
     }
 }
 
+
+
+
+
+/*footer i napis w jumbortonie*/
+
 @media screen and (max-width: 480px) {
     .hero-heading h1 {
         font-size: 24px;
@@ -318,11 +340,11 @@ body {
     }
 }
 
-@media (max-height: 650px) {
-    .hero {
-        height: 100vh;
-    }
-}
+
+
+
+/*galeria*/
+
 
 .gallery-section .gallery-div {
     position: relative;
@@ -337,6 +359,8 @@ body {
     width: 100%;
 }
 
+/*hoover galeria*/
+
 .overlay {
     position: absolute;
     top: 0;
@@ -350,6 +374,9 @@ body {
     transition: 0.7s;
 }
 
+
+/*napis hoover galeria*/
+
 .middle {
     position: absolute;
     top: 50%;
@@ -361,6 +388,10 @@ body {
 .middle h5 {
     text-transform: uppercase;
 }
+
+
+
+/*social button*/
 
 .social-button {
     margin-top: 20px;
@@ -383,74 +414,12 @@ body {
     color: white;
 }
 
-.carousel-section .carousel-indicators li {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
-.carousel-section .carousel-indicators .active {
-    background-color: white;
-}
 
-.carousel-section .carousel-inner img {
-    width: 100%;
-    max-height: 500px;
-}
 
-.carousel-section .carousel-image {
-    width: 100%;
-    max-height: 500px;
-}
 
-.carousel-section .carousel-caption {
-    padding-bottom: -100px;
-}
 
-.carousel-section .carousel-caption h3 {
-    font-size: 36px;
-    font-style: italic;
-    font-family: "Cardo";
-    line-height: 40px;
-    font-weight: 100;
-    text-align: left;
-    text-shadow: 1px 1px 1px black;
-}
-
-.carousel-section .carousel-caption h6 {
-    text-transform: uppercase;
-    text-align: left;
-    text-shadow: 1px 1px 1px black;
-}
-
-@media screen and (min-width: 990px) and (max-width: 1400px) {
-    .carousel-section .carousel-caption {
-        padding-bottom: 5%;
-    }
-
-    .carousel-section .carousel-caption h3 {
-        font-size: 20px;
-    }
-
-    .carousel-section .carousel-caption h6 {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 0) and (max-width: 700px) {
-    .carousel-section .carousel-caption {
-        padding-bottom: 10%;
-    }
-
-    .carousel-section .carousel-caption h3 {
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    .carousel-section .carousel-caption h6 {
-        font-size: 14px;
-        line-height: 14px;
-    }
-}
+/*contact*/
 
 .contact {
     background-color: #1A1A1A;
@@ -511,6 +480,9 @@ body {
     margin-top: 60px;
 }
 
+
+/*download*/
+
 .download-section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -530,6 +502,9 @@ body {
 .download-section .btn-basic {
     margin-top: 2vh;
 }
+
+
+/*footer*/
 
 .footer-section {
     padding-top: 6vh;
@@ -572,5 +547,3 @@ footer p a {
     text-decoration: none;
     color: white;
 }
-
-/*# sourceMappingURL=style.css.map */
