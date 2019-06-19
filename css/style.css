@@ -219,6 +219,7 @@ h5 {
 }
 
 /*main*/
+/*about*/
 .about {
     margin-top: 0px;
     padding: 10px 0px 20px;
@@ -274,7 +275,7 @@ h5 {
 
 /*about*/
 
-
+/*stack*/
 .services {
     min-height: 400px;
     background: #000;
@@ -311,8 +312,27 @@ h5 {
     cursor: pointer;
 }
 
-.services .star {
-    background-image: url("../images/star.png");
+.skills .fa {
+
+    background-color: #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 70px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: #B88B58
+}
+
+.skills .fa:hover {
+    animation: rubberBand 1s;
+}
+
+.services .html1 {
+    background-image: url("../images/html1.png");
 }
 
 .services .support {
@@ -338,6 +358,8 @@ h5 {
     height: 180px;
 }
 
+/*stack*/
+/*project*/
 .projects {
     padding: 60px 0;
 }
@@ -374,9 +396,11 @@ h5 {
     border-bottom: 5px solid #b88b58;
 }
 
+/*
 .projects .btn {
     margin-top: 20px;
 }
+*/
 
 .projects .col {
     padding: 12px;
@@ -433,76 +457,12 @@ h5 {
     transition: 0.4s ease-in 0.5s;
 }
 
-.team .carousel img {
-    height: 700px;
-}
+/*project*/
 
-.team .carousel-inner .carousel-caption {
-    left: 0;
-    width: 100%;
-}
-
-.team h1,
-.team h5 {
-    color: #fff;
-}
-
-.team .row {
-    margin: 25px 0;
-}
-
-.team .row .col {
-    background-color: #fff;
-    margin: 1%;
-    width: 31%;
-    padding: 0 60px;
-}
-
-.team .row .col h3 {
-    font-size: 21px;
-}
-
-.team .row .col p {
-    font-size: 14px;
-}
-
-.team .row .col-fa {
-    width: 33px;
-    margin: 20px 2px;
-    padding: 0;
-    display: block;
-    float: left;
-}
-
-.team .row .fa {
-    background-color: #ccc;
-    border-radius: 50%;
-    width: 33px;
-    height: 33px;
-    font-size: 16px;
-    line-height: 30px;
-    cursor: pointer;
-    color: #fff;
-}
-
-.team .row .fa:hover {
-    color: #fff;
-    transform: scale(1.2);
-    transition: transform 0.5s 0s;
-    background: #b88b58;
-}
-
-.team .face {
-    width: 13vw;
-    max-width: 175px;
-    height: 13vw;
-    max-height: 175px;
-    margin: 40px auto;
-    background-size: cover;
-}
 
 /*clients*/
 
+/*
 .clients {
     background: #f5f6f7;
     height: 700px;
@@ -543,134 +503,21 @@ h5 {
     font-size: 14px;
     font-weight: 300;
 }
+*/
 
 /*clients*/
-
+/*logo*/
+/*
 .logo .col {
     height: 150px;
     padding: 50px 0 50px 40px;
 }
+*/
+/*logo*/
 
-.prices {
-    padding: 40px 0;
-    background: url("../images/bg.png");
-    background-size: cover;
-}
+/*facts*/
 
-.prices .col {
-    background: #fff;
-    margin: 20px 1%;
-    padding-top: 20px;
-    width: 23%;
-    cursor: help;
-}
-
-.prices .col h1 {
-    line-height: 10px;
-}
-
-.prices p {
-    line-height: 10px;
-    margin: 5px;
-    font-family: "Gotham Rounded";
-}
-
-.prices h2 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.prices h6 {
-    font-size: 10px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.prices .btn {
-    margin: 20px 0 40px;
-    width: 15vw;
-    max-width: 180px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 33px;
-}
-
-.prices .btn:hover {
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.products {
-    height: 720px;
-    text-shadow: none;
-}
-
-.products .carousel-indicators {
-    bottom: 90px;
-}
-
-.products .carousel-caption {
-    text-shadow: 0 0 0 black;
-    width: 100%;
-    left: 0;
-    height: 680px;
-}
-
-.products .carousel img {
-    height: 720px;
-}
-
-.products .row {
-    margin-top: 25px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
-}
-
-.products .row .boxes {
-    background: url("../images/img.png");
-    background-repeat: no-repeat;
-    height: 380px;
-    margin-top: 25px;
-}
-
-.products .row .col {
-    text-align: left;
-    padding: 10px;
-}
-
-.products .row .col h3 {
-    text-transform: uppercase;
-    font-size: 21px;
-    color: #242424;
-    font-weight: 700;
-    margin-top: 35px;
-}
-
-.products .row .col p {
-    color: #5b5b5b;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.products .btn {
-    margin-top: 60px;
-    width: 192px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 35px;
-    color: #fff;
-}
-
-.products .btn:hover {
-    font-size: 18px;
-    transition: 0.3s;
-}
-
+/*
 .facts {
     min-height: 400px;
     background: #000;
@@ -726,7 +573,10 @@ h5 {
 .facts .row .col .row:nth-child(2) {
     height: 50px;
 }
-
+*/
+/*facts*/
+/*share box*/
+/*
 .share {
     box-shadow: 2px 2px 2px #ccc;
     padding-top: 20px;
@@ -842,7 +692,9 @@ h5 {
     margin: 4px 10px;
     color: #b88b58;
 }
-
+*/
+/*share box*/
+/*contact*/
 .contact {
     padding: 40px 0;
 }
@@ -897,40 +749,9 @@ h5 {
     margin-top: 60px;
 }
 
-.map {
-    background: url("../images/map.png");
-    background-size: cover;
-    background-position: center;
-    height: 416px;
-    padding: 28px 10vw;
-}
+/*contact*/
 
-.map .place-info {
-    width: 540px;
-    height: 360px;
-    background: #fff;
-    padding: 50px 20px;
-}
-
-.map .place-info .col {
-    height: 40px;
-    line-height: 30px;
-    margin: 10px;
-    font-family: "Gotham Rounded";
-}
-
-.map .place-info .col i {
-    font-size: 20px;
-    display: inline-block;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    background: #ccc;
-    color: #fff;
-    line-height: 36px;
-    text-align: center;
-    margin: 0 20px;
-}
+/*<!--    footer-->*/
 
 .footer {
     min-height: 260px;
@@ -1030,6 +851,8 @@ h5 {
     font-size: 12px;
     color: #7e7e7e;
 }
+
+/*<!--    footer-->*/
 
 #myModal {
     top: 100px;
