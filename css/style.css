@@ -824,23 +824,6 @@ h5 {
     transition: 0.3s;
 }
 
-.footer .subscribe {
-    background: url("../images/bg1.png");
-    text-align: center;
-}
-
-.footer .subscribe input {
-    margin: 35px auto 20px;
-    width: 70%;
-    border: none;
-    border-bottom: 3px solid #ccc;
-    background: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
 .footer span {
     color: #fff;
     display: block;
