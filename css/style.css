@@ -57,6 +57,7 @@ h5 {
     text-transform: uppercase;
 }
 
+/*Button*/
 .btn {
     width: 180px;
     height: 45px;
@@ -66,26 +67,14 @@ h5 {
 }
 
 .btn:hover {
-    background: -webkit-linear-gradient(left, #fff, #b88b58);
+    background-color: #fff;
+    border-style: #000;
+    border-style: solid;
+
 }
 
-.btn:hover * {
-    font-size: 18px;
-    transition: 0.3s;
-}
+/*Button*/
 
-.btn:active {
-    background: #000;
-}
-
-.btn a {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 35px;
-    color: #fff;
-    text-decoration: none;
-}
 
 .carousel-indicators li {
     border-color: #b88b58;
@@ -216,6 +205,19 @@ h5 {
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.hero a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    color: aqua;
 }
 
 /*main*/
@@ -697,6 +699,12 @@ h5 {
 /*contact*/
 .contact {
     padding: 40px 0;
+    background-color: #1A1A1A;
+}
+
+h1 h5 {
+    color: #fff;
+
 }
 
 .contact .ct-box {
@@ -706,18 +714,19 @@ h5 {
 
 .contact .ct-box .btn {
     margin-bottom: 30px;
-    width: 192px;
-    border-radius: 5px;
+    width: 180px;
+    height: 45px;
+    border-radius: 25px;
+    border-style: none;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 35px;
     color: #fff;
 }
 
 .contact .ct-box .btn:hover {
-    font-size: 18px;
-    transition: 0.3s;
+    color: #b88b58;
 }
 
 .contact .ct-box form {
@@ -751,8 +760,41 @@ h5 {
 
 /*contact*/
 
+/*Download*/
+.download {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.download h1 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.download h4 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.download .btn {
+    margin-top: 2vh;
+    color: #fff;
+
+}
+
+.download .btn:hover {
+    color: #b88b58;
+    background-color: #fff;
+}
+
+/*Download*/
+
+
+
 /*<!--    footer-->*/
 
+/*
 .footer {
     min-height: 260px;
     padding: 10px;
@@ -834,9 +876,70 @@ h5 {
     font-size: 12px;
     color: #7e7e7e;
 }
+*/
 
-/*<!--    footer-->*/
 
+
+
+
+
+/*Footer 1*/
+
+.footer-section {
+    padding-top: 6vh;
+    padding-bottom: 8vh;
+    background-color: #161616;
+    color: #fff;
+}
+
+.footer-section .social-button {
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 1vh;
+}
+
+.footer-section .social-button i {
+    color: #fff;
+}
+
+.footer-section p {
+    color: #c6cacc;
+    font-weight: 100;
+}
+
+.footer-section h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*Footer 1*/
+
+/*Footer*/
+footer {
+    background-color: #000000;
+    padding: 20px 0 15px 0;
+}
+
+footer p {
+    color: #808080;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p a:hover {
+    color: #b88b58;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/*Footer*/
+
+/*
 #myModal {
     top: 100px;
 }
@@ -890,7 +993,10 @@ h5 {
     font-size: 12px;
     font-weight: 700;
 }
+*/
 
+
+/*
 #myModal1 .modal-body #carousel-example-generic9 {
     width: 90%;
     margin: 0 auto;
@@ -951,7 +1057,10 @@ h5 {
     width: 30%;
     float: left;
 }
+*/
 
+
+/*
 #myModal1 .modal-footer .modal-socials .modal-numbers {
     padding-left: 5px;
 }
@@ -979,7 +1088,9 @@ h5 {
     background-color: #66CCFF;
     color: #fff;
 }
+*/
 
+/*
 #myModal1 .modal-footer .modal-socials .fa-twitter:hover {
     background-color: #fff;
     border: 1px solid #66CCFF;
@@ -1029,7 +1140,9 @@ h5 {
     background-color: #fff;
     border: 1px solid #b71c29;
 }
+*/
 
+/*
 .modal-prices .modal-header {
     background: -webkit-linear-gradient(235deg, #fff, #b88b58, #b88b58);
 }
@@ -1082,6 +1195,7 @@ h5 {
     margin-right: 5vw;
     float: right;
 }
+*/
 
 @media (max-width: 1360px) {
 
