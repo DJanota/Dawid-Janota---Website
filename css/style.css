@@ -277,11 +277,11 @@ h5 {
 
 /*about*/
 
-/*stack*/
+/*Stack*/
 .services {
     min-height: 400px;
-    background: #000;
-    padding: 40px 0;
+    background: #1A1A1A;
+    padding: 40px
 }
 
 .services h1 {
@@ -303,8 +303,8 @@ h5 {
 }
 
 .services .ico {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
     background-size: cover;
 }
@@ -316,12 +316,12 @@ h5 {
 
 .skills .fa {
 
-    background-color: #000;
+    background-color: #1A1A1A;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: 0px;
-    font-size: 70px;
+    font-size: 80px;
     box-sizing: border-box;
     line-height: 100px;
     text-align: center;
@@ -350,24 +350,18 @@ h5 {
 }
 
 .services .row {
-    margin: 40px 0;
+    margin: 50px;
     border-left: 2px solid #bebebe;
 }
 
 .services .row .col {
     border-right: 2px solid #bebebe;
     padding: 20px;
-    height: 180px;
+    height: 220px;
+    width: 300px;
 }
 
-/*/slide*/
-
-/*/slide*/
-
-
-
-
-/*stack*/
+/*Stack*/
 /*Projects*/
 .projects {
     padding: 50px;
