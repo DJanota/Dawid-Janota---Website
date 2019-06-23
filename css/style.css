@@ -360,12 +360,41 @@ h5 {
     height: 180px;
 }
 
+/*/slide*/
+
+/*/slide*/
+
+
+
+
 /*stack*/
-/*project*/
+/*Projects*/
 .projects {
-    padding: 60px 0;
+    padding: 50px;
+    background-image: url(../images/bg-img-01.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.projects h1 {
+    color: #fff;
+}
+
+.projects h5 {
+    color: #c6cacc;
+    font-weight: 100;
+}
+
+
+.tab-content {
+    padding: 55px;
+}
+
+
+/*
 .projects .nav-tabs {
     margin: 50px auto 35px;
     width: 570px;
@@ -397,6 +426,7 @@ h5 {
     border: none;
     border-bottom: 5px solid #b88b58;
 }
+*/
 
 /*
 .projects .btn {
@@ -405,34 +435,41 @@ h5 {
 */
 
 .projects .col {
-    padding: 12px;
+    padding: 13px;
+    margin: 1px;
     position: relative;
     overflow: hidden;
-    height: 165px;
-    margin-bottom: 15px;
+    height: 400px;
+    width: 350px;
+
 }
 
 .projects .col .photo {
-    height: 165px;
+    height: 400px;
+    width: 350px;
+    margin: 1px;
+
     z-index: 3;
     background-size: cover;
     background-position: center;
     width: 100%;
+
 }
 
 .projects .col .layer {
-    height: 165px;
+    height: 400px;
+    width: 350px;
     z-index: 2;
     width: calc(100% - 25px);
     position: absolute;
-    top: 165px;
+    top: 250px;
 }
 
 .projects .col .layer .photo-ico {
     cursor: pointer;
-    width: 70%;
+    width: 60%;
     font-size: 12px;
-    margin: 35px auto;
+    margin: 55px auto;
     text-align: center;
     visibility: hidden;
 }
@@ -459,7 +496,7 @@ h5 {
     transition: 0.4s ease-in 0.5s;
 }
 
-/*project*/
+/*Projects*/
 
 
 /*clients*/
@@ -696,15 +733,15 @@ h5 {
 }
 */
 /*share box*/
-/*contact*/
+/*Contact*/
 .contact {
-    padding: 40px 0;
+    padding: 60px 0;
     background-color: #1A1A1A;
+    height: 800px;
 }
 
-h1 h5 {
+.contact h1 {
     color: #fff;
-
 }
 
 .contact .ct-box {
@@ -713,7 +750,7 @@ h1 h5 {
 }
 
 .contact .ct-box .btn {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     width: 180px;
     height: 45px;
     border-radius: 25px;
@@ -730,7 +767,7 @@ h1 h5 {
 }
 
 .contact .ct-box form {
-    margin: 60px 0 40px;
+    margin: 70px 0 50px;
 }
 
 .contact .ct-box form input {
@@ -751,30 +788,71 @@ h1 h5 {
 }
 
 .contact .ct-box form #subject {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
-.contact .ct-box form #massage {
-    margin-top: 60px;
+.contact .ct-box form #message {
+    margin-top: 40px;
 }
 
-/*contact*/
+/*Contact 2*/
+.contact {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+.contact .social-button {
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 1vh;
+}
+
+.contact .social-button i {
+    color: #fff;
+}
+
+.contact p {
+    color: #c6cacc;
+    font-weight: 100;
+}
+
+.contact h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b88b58;
+}
+
+/*Social Buttons*/
+.social-button {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.social-button i {
+    font-size: 20px;
+    color: #c6cacc;
+}
+
+.social-button:hover {
+    background: #B88B58;
+}
+
+.social-button:hover i {
+    color: #fff;
+}
+
+/*Social Buttons*/
+/*Contact 2*/
+/*Contact*/
 
 /*Download*/
 .download {
     padding-top: 10vh;
     padding-bottom: 10vh;
-}
-
-.download h1 {
-    font-size: 28px;
-    font-weight: 300;
-}
-
-.download h4 {
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .download .btn {
@@ -883,37 +961,6 @@ h1 h5 {
 
 
 
-/*Footer 1*/
-
-.footer-section {
-    padding-top: 6vh;
-    padding-bottom: 8vh;
-    background-color: #161616;
-    color: #fff;
-}
-
-.footer-section .social-button {
-    color: #fff;
-    border: 1px solid #fff;
-    margin-top: 1vh;
-}
-
-.footer-section .social-button i {
-    color: #fff;
-}
-
-.footer-section p {
-    color: #c6cacc;
-    font-weight: 100;
-}
-
-.footer-section h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-/*Footer 1*/
 
 /*Footer*/
 footer {
