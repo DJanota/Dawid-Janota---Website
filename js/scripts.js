@@ -33,8 +33,21 @@ $('a[href*="#"]')
         }
     });
 
-$(function () {
-    $('#js-click').click(function () {
-        $('#js-mymodal').html('<h1>DONE!</h1><h5>We will soon get back to You!</h5>');
-    });
+//Button back
+var btn = $('#button');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
+});
+//Button back
