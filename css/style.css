@@ -1,13 +1,13 @@
 .photo-1 {
-    background-image: url("../images/image6.jpg");
+    background-image: url("../images/Original.png");
 }
 
 .photo-2 {
-    background-image: url("../images/image1.png");
+    background-image: url("../images/laptop.jpg");
 }
 
 .photo-3 {
-    background-image: url("../images/image2.png");
+    background-image: url("../images/djwebdev.png");
 }
 
 .photo-4 {
@@ -23,7 +23,7 @@
 }
 
 .face-1 {
-    background-image: url("../images/img-team-1.png");
+    background-image: url("../images/Dawid%20Janota.jpg");
 }
 
 .face-2 {
@@ -59,7 +59,7 @@ h5 {
 
 /*Button*/
 .btn {
-    width: 180px;
+    width: 160px;
     height: 45px;
     background: #b88b58;
     border-style: none;
@@ -73,26 +73,12 @@ h5 {
 
 }
 
-/*Button*/
 
-
-.carousel-indicators li {
-    border-color: #b88b58;
-}
-
-.carousel-indicators .active {
-    background-color: #b88b58;
-}
-
-.carousel img {
-    width: 100%;
-}
-
-/*menu*/
-
+/*Menu*/
 .menu {
     background-color: #000;
     color: #fff;
+    width: 100%;
 }
 
 .menu .nav {
@@ -102,30 +88,25 @@ h5 {
 
 }
 
-/*logo*/
-
-
-.menu .nav .logo {
+/*Logo*/
+.menu .nav .logo a {
     float: left;
-    margin: 25px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     height: 90px;
     width: 280px;
     display: inline-block;
     line-height: 100px;
     background-image: url("../images/logo_png.png");
     background-size: cover;
-
+    cursor: pointer;
 }
 
-
-/*logo*/
-
-
+/*Logo*/
 .menu .nav ul {
     float: right;
     margin: 0px;
     padding: 15px;
-    height: 140px;
+    height: 120px;
     display: inline-block;
 }
 
@@ -149,28 +130,14 @@ h5 {
     font-weight: 400;
     color: #fff;
     height: 100px;
-    line-height: 100px;
+    line-height: 80px;
 }
 
-/*menu*/
-/*main*/
-.main {
+/*Menu*/
+/*Main*/
+.main img {
     width: 100%;
-    height: 740px;
-    padding: 0;
-
-}
-
-.main #carousel-example-generic2 {
-    height: 740px;
-}
-
-.main #carousel-example-generic2 .carousel-inner {
-    height: 740px;
-}
-
-.main #carousel-example-generic2 .carousel-indicators {
-    bottom: 50px;
+    height: 100%;
 }
 
 .main * {
@@ -179,10 +146,8 @@ h5 {
 
 .main .hero {
     position: relative;
-    top: -540px;
-    width: 90%;
-    height: 500px;
     margin: 40px auto;
+    top: -650px
 }
 
 .main .hero * {
@@ -191,7 +156,7 @@ h5 {
 
 .main .hero h1 {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 72px;
     line-height: 69px;
 }
@@ -207,40 +172,38 @@ h5 {
     text-transform: uppercase;
 }
 
-.hero a {
+/*Main button*/
+.hero .btn {
+    width: 160px;
+    height: 45px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
     line-height: 35px;
     color: #fff;
     text-decoration: none;
+    border-radius: 25px;
 }
 
-.hero a:hover {
-    color: aqua;
+
+.hero .btn:hover {
+    color: #b88b58;
+    text-decoration: none;
+
 }
 
-/*main*/
-/*about*/
+/*Main button*/
+/*Main*/
+/*About*/
 .about {
-    margin-top: 0px;
+    margin-top: -320px;
     padding: 10px 0px 20px;
 }
 
-/*
-.about .row {
-    padding: 40px 0;
-}
-
-.about .row .col {
-    text-align: left;
-}
-*/
-
 .about {
     background: #fff;
-    height: 780px;
-    padding: 70px;
+    height: 850px;
+    padding: 40px;
 }
 
 .about .container {
@@ -248,12 +211,14 @@ h5 {
 }
 
 .about .face {
-    width: 10vw;
-    max-width: 135px;
-    height: 10vw;
-    max-height: 135px;
-    margin: 90px auto 20px;
+    width: 15vw;
+    max-width: 220px;
+    height: 15vw;
+    max-height: 220px;
+    margin: 40px auto 30px;
     background-size: cover;
+    border: solid #B88B58;
+    border-radius: 50%;
 }
 
 .about h3 {
@@ -264,7 +229,7 @@ h5 {
 
 .about h6 {
     color: #000;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 18px;
 }
 
@@ -275,41 +240,41 @@ h5 {
     font-weight: 300;
 }
 
-/*about*/
+/*About*/
 
 /*Stack*/
-.services {
+.stack {
     min-height: 400px;
     background: #1A1A1A;
-    padding: 40px
+    padding: 50px;
 }
 
-.services h1 {
+.stack h1 {
     color: #fff;
 }
 
-.services h5 {
+.stack h5 {
     color: #aeaeae;
 }
 
-.services h3 {
+.stack h3 {
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
 }
 
-.services p {
+.stack p {
     font-size: 12px;
 }
 
-.services .ico {
+.stack .ico {
     width: 80px;
     height: 80px;
     margin: 0 auto;
     background-size: cover;
 }
 
-.services .ico:hover {
+.stack .ico:hover {
     animation: rubberBand 1s;
     cursor: pointer;
 }
@@ -326,46 +291,58 @@ h5 {
     line-height: 100px;
     text-align: center;
     cursor: pointer;
-    color: #B88B58
+    color: #B88B58;
 }
 
 .skills .fa:hover {
     animation: rubberBand 1s;
 }
 
-.services .html1 {
-    background-image: url("../images/html1.png");
-}
-
-.services .support {
+.stack .support {
     background-image: url("../images/support.png");
 }
 
-.services .clock {
-    background-image: url("../images/clock.png");
-}
-
-.services .quality {
-    background-image: url("../images/quality.png");
-}
-
-.services .row {
-    margin: 50px;
+.stack .row {
+    margin: 52px;
     border-left: 2px solid #bebebe;
 }
 
-.services .row .col {
+.stack .row .col {
     border-right: 2px solid #bebebe;
     padding: 20px;
     height: 220px;
-    width: 300px;
+    width: 370px;
+}
+
+.stack #carousel-example-generic2 {
+    height: 400px;
+}
+
+.stack #carousel-example-generic2 .carousel-inner {
+    height: 220px;
+}
+
+.stack #carousel-example-generic2 .carousel-indicators {
+    bottom: 0px;
+}
+
+.carousel-indicators li {
+    border-color: #b88b58;
+}
+
+.carousel-indicators .active {
+    background-color: #b88b58;
+}
+
+.carousel img {
+    width: 100%;
 }
 
 /*Stack*/
 /*Projects*/
 .projects {
     padding: 50px;
-    background-image: url(../images/Projekt%20bez%20tytu%C5%82u.png);
+    background-image: url(../images/photo-7.png);
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -374,7 +351,7 @@ h5 {
 }
 
 .projects h1 {
-    color: #fff;
+    color: #000;
 }
 
 .projects h5 {
@@ -513,9 +490,9 @@ h5 {
 /*facts*/
 /*Contact*/
 .contact {
-    padding: 60px 0;
+    padding: 50px;
     background-color: #1A1A1A;
-    height: 800px;
+    height: 850px;
 }
 
 .contact h1 {
@@ -529,7 +506,7 @@ h5 {
 
 .contact .ct-box .btn {
     margin-bottom: 100px;
-    width: 180px;
+    width: 160px;
     height: 45px;
     border-radius: 25px;
     border-style: none;
@@ -631,6 +608,8 @@ h5 {
 .download {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    height: 350px;
+    width: 100%;
 }
 
 .download .btn {
@@ -872,8 +851,8 @@ footer p a:hover {
     border: 1px solid #b71c29;
 }
 */
-
 /*
+
 .modal-prices .modal-header {
     background: -webkit-linear-gradient(235deg, #fff, #b88b58, #b88b58);
 }
@@ -892,42 +871,54 @@ footer p a:hover {
 .modal-sub h1 {
     color: #b88b58;
 }
-
-.fixed {
-    position: sticky;
-    width: 96vw;
-    top: 530px;
-    margin-top: -30px;
-    z-index: 10;
-}
-
-.fixed div {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #b88b58;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.fixed div:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-.fixed div:first-child {
-    margin-left: 5vw;
-    float: left;
-}
-
-.fixed div:nth-child(2) {
-    margin-right: 5vw;
-    float: right;
-}
 */
+/*Button back*/
+#button {
+    display: inline-block;
+    background-color: #b88b58;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 50%;
 
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+#button:active {
+    background-color: #b88b58;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Button back*/
 @media (max-width: 1360px) {
 
     .menu .nav {
