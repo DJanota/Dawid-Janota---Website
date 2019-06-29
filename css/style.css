@@ -147,7 +147,7 @@ h5 {
 .main .hero {
     position: relative;
     margin: 40px auto;
-    top: -650px
+    top: -600px
 }
 
 .main .hero * {
@@ -298,12 +298,30 @@ h5 {
     animation: rubberBand 1s;
 }
 
+.skills .icon {
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: #B88B58;
+}
+
+.skills .icon:hover {
+    animation: rubberBand 1s;
+}
+
 .stack .support {
     background-image: url("../images/support.png");
 }
 
 .stack .row {
-    margin: 52px;
+    margin: 48px;
     border-left: 2px solid #bebebe;
 }
 
@@ -311,7 +329,7 @@ h5 {
     border-right: 2px solid #bebebe;
     padding: 20px;
     height: 220px;
-    width: 370px;
+    width: 330px;
 }
 
 .stack #carousel-example-generic2 {
@@ -341,7 +359,7 @@ h5 {
 /*Stack*/
 /*Projects*/
 .projects {
-    padding: 50px;
+    padding: 0px;
     background-image: url(../images/photo-7.png);
     height: 100%;
     background-attachment: fixed;
@@ -427,67 +445,6 @@ h5 {
 }
 
 /*Projects*/
-
-/*facts*/
-
-/*
-.facts {
-    min-height: 400px;
-    background: #000;
-    padding: 40px 0;
-}
-
-.facts h1 {
-    color: #fff;
-}
-
-.facts h5 {
-    color: #aeaeae;
-}
-
-.facts h3 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-.facts p {
-    font-size: 12px;
-}
-
-.facts .row {
-    margin-top: 15px;
-}
-
-.facts .row .col {
-    padding: 0 20px;
-}
-
-.facts .row .col h1 {
-    color: #b88b58;
-    font-size: 48px;
-}
-
-.facts .row .col hr {
-    width: 18px;
-    height: 2px;
-    margin: 0 auto;
-    color: #7e7e7e;
-    border-color: #7e7e7e;
-    background-color: #7e7e7e;
-    margin-top: 20px;
-    margin-bottom: -10px;
-}
-
-.facts .row .col .row:first-child {
-    height: 115px;
-}
-
-.facts .row .col .row:nth-child(2) {
-    height: 50px;
-}
-*/
-/*facts*/
 /*Contact*/
 .contact {
     padding: 50px;
@@ -648,230 +605,18 @@ footer p a:hover {
 }
 
 /*Footer*/
-
-/*
-#myModal {
-    top: 100px;
-}
-
-#myModal .modal-content {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#myModal .modal-header {
-    height: 30px;
-    border: none;
-}
-
-#myModal .modal-body input {
-    margin: 0 auto 40px;
-    width: 70%;
-    border: none;
-    border-bottom: 3px solid #ccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-#myModal .modal-body .btn {
-    margin-bottom: 30px;
-}
-
-#myModal .modal-body h1 {
-    color: #b88b58;
-}
-
-#myModal1 .modal-header {
-    height: 75px;
-    padding-left: 7%;
-}
-
-#myModal1 .modal-header .date {
-    color: #aeaeae;
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-}
-
-#myModal1 .modal-header h4 {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-#myModal1 .modal-header .details {
-    font-size: 12px;
-    font-weight: 700;
-}
-*/
-
-
-/*
-#myModal1 .modal-body #carousel-example-generic9 {
-    width: 90%;
-    margin: 0 auto;
-}
-
-#myModal1 .modal-body #carousel-example-generic9 .carousel-control {
-    top: 550px;
-}
-
-#myModal1 .modal-body #carousel-example-generic9 .carousel-control .glyphicon-chevron-left,
-#myModal1 .modal-body #carousel-example-generic9 .carousel-control .glyphicon-chevron-right {
-    background-color: #b88b58;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-shadow: none;
-    color: #000;
-}
-
-#myModal1 .modal-body #carousel-example-generic9 .right.carousel-control {
-    left: inherit;
-    right: -50px;
-}
-
-#myModal1 .modal-body #carousel-example-generic9 .left.carousel-control {
-    left: inherit;
-    right: 50px;
-}
-
-#myModal1 .modal-body .mini-photos {
-    height: 100px;
-    padding: 25px 5% 0;
-}
-
-#myModal1 .modal-body .mini-photos img {
-    float: left;
-    width: 12%;
-    min-width: 70px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-#myModal1 .modal-footer {
-    background-color: #ededed;
-    text-align: left;
-}
-
-#myModal1 .modal-footer .modal-desc {
-    margin-left: 5%;
-    width: 60%;
-    float: left;
-    display: inline-block;
-    padding-right: 20px;
-}
-
-#myModal1 .modal-footer .modal-socials {
-    width: 30%;
-    float: left;
-}
-*/
-
-
-/*
-#myModal1 .modal-footer .modal-socials .modal-numbers {
-    padding-left: 5px;
-}
-
-#myModal1 .modal-footer .modal-socials span {
-    margin: 0 14px;
-}
-
-#myModal1 .modal-footer .modal-socials .fa {
-    display: inline-block;
-    float: left;
-    background-color: white;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    font-size: 20px;
-    box-sizing: border-box;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-twitter {
-    background-color: #66CCFF;
-    color: #fff;
-}
-*/
-
-/*
-#myModal1 .modal-footer .modal-socials .fa-twitter:hover {
-    background-color: #fff;
-    border: 1px solid #66CCFF;
-    color: #66CCFF;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-facebook {
-    background-color: #3366FF;
-    color: #fff;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-facebook:hover {
-    color: #3366FF;
-    background-color: #fff;
-    border: 1px solid #3366FF;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-google-plus {
-    background-color: #FF3333;
-    color: #fff;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-google-plus:hover {
-    color: #FF3333;
-    background-color: #fff;
-    border: 1px solid #FF3333;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-linkedin {
-    background-color: #127cb4;
-    color: #fff;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-linkedin:hover {
-    color: #127cb4;
-    background-color: #fff;
-    border: 1px solid #127cb4;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-pinterest-p {
-    background-color: #b71c29;
-    color: #fff;
-}
-
-#myModal1 .modal-footer .modal-socials .fa-pinterest-p:hover {
-    color: #b71c29;
-    background-color: #fff;
-    border: 1px solid #b71c29;
-}
-*/
-/*
-
-.modal-prices .modal-header {
-    background: -webkit-linear-gradient(235deg, #fff, #b88b58, #b88b58);
-}
-
-.modal-prices .btn {
-    width: 120px;
-    height: 30px;
-}
-
+/*Modal*/
 .modal-cont .modal-header,
 .modal-sub .modal-header {
-    background: -webkit-linear-gradient(235deg, #fff, #b88b58, #b88b58);
+    background: #b88b58;
 }
 
 .modal-cont h1,
 .modal-sub h1 {
     color: #b88b58;
 }
-*/
+
+/*Modal*/
 /*Button back*/
 #button {
     display: inline-block;
