@@ -1,3 +1,4 @@
+//innne
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -51,3 +52,10 @@ btn.on('click', function (e) {
     }, '300');
 });
 //Button back
+jQuery(document).ready(function () {
+    var downloadButton = jQuery('.et-download-button');
+
+    downloadButton.each(function (index) {
+        jQuery(this).attr('download', 'pdf-file');
+    });
+});
