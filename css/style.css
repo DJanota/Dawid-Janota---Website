@@ -569,15 +569,17 @@ h5 {
     width: 100%;
 }
 
-.download .btn {
+.download .btn a {
     margin-top: 2vh;
     color: #fff;
+    text-decoration: none;
 
 }
 
-.download .btn:hover {
+.download .btn a:hover {
     color: #b88b58;
     background-color: #fff;
+    text-decoration: none;
 }
 
 /*Download*/
