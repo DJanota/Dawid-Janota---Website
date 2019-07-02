@@ -32,7 +32,6 @@ $('a[href*="#"]')
             }
         }
     });
-
 //Button back
 var btn = $('#button');
 
