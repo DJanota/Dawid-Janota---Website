@@ -68,11 +68,9 @@ h5 {
 
 .btn:hover {
     background-color: #fff;
-    border-style: #000;
-    border-style: solid;
+    border-style: none;
 
 }
-
 
 /*Menu*/
 .menu {
@@ -173,23 +171,18 @@ h5 {
 }
 
 /*Main button*/
-.hero .btn {
-    width: 160px;
-    height: 45px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 400;
-    line-height: 35px;
+.hero .btn a {
     color: #fff;
+    background-color: #b88b58;
+    border: 11px solid #b88b58;
     text-decoration: none;
-    border-radius: 25px;
 }
 
-
-.hero .btn:hover {
+.hero .btn:hover a {
     color: #b88b58;
+    background: #fff;
+    border: 11px solid #fff;
     text-decoration: none;
-
 }
 
 /*Main button*/
@@ -844,19 +837,33 @@ h5 {
     padding-bottom: 10vh;
     height: 350px;
     width: 100%;
+    text-decoration: none;
+
 }
 
 .download .btn a {
     margin-top: 2vh;
     color: #fff;
+    border: 13px solid #b88b58;
     text-decoration: none;
-
+    width: 180px;
 }
 
-.download .btn a:hover {
+.download .btn {
+    border-style: solid;
+    border-color: #b88b58;
+}
+
+.download .btn:hover a {
     color: #b88b58;
     background-color: #fff;
     text-decoration: none;
+    border: 13px solid #fff;
+    width: 180px;
+    border-style: solid red;
+
+
+
 }
 
 /*Download*/
