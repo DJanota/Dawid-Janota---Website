@@ -862,6 +862,8 @@ h5 {
     width: 180px;
     border-style: solid red;
 
+
+
 }
 
 /*Download*/
@@ -948,6 +950,39 @@ footer p a:hover {
 }
 
 /*Button back*/
+/* cookie alert */
+#cookies-message {
+    color: white;
+    padding: 12px 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#accept-cookies-checkbox {
+    background-color: #00AFBF;
+    color: #FFF;
+    border: solid 1px #00AFBF;
+    transition: all 0.5s;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+#accept-cookies-checkbox:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
 @media (max-width: 1360px) {
 
     .menu .nav {
@@ -975,7 +1010,7 @@ footer p a:hover {
         top: -40vw;
     }
 
-    /*about*/
+    /*    about*/
     .about {
         margin-top: -60px;
     }
