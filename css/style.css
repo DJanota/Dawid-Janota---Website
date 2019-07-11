@@ -170,7 +170,7 @@ h5 {
     text-transform: uppercase;
 }
 
-/*Main button*/
+/*Main Button*/
 .hero .btn a {
     color: #fff;
     background-color: #b88b58;
@@ -185,7 +185,7 @@ h5 {
     text-decoration: none;
 }
 
-/*Main button*/
+/*Main Button*/
 /*Main*/
 /*About*/
 .about {
@@ -949,8 +949,8 @@ footer p a:hover {
     visibility: visible;
 }
 
-/*Button back*/
-/* cookie alert */
+/*Button Back*/
+/*Cookie Alert*/
 #cookies-message {
     color: white;
     padding: 12px 10px;
@@ -966,9 +966,9 @@ footer p a:hover {
 }
 
 #accept-cookies-checkbox {
-    background-color: #00AFBF;
+    background-color: #b88b58;
     color: #FFF;
-    border: solid 1px #00AFBF;
+    border: solid 1px #b88b58;
     transition: all 0.5s;
     padding: 2px 6px;
     border-radius: 4px;
