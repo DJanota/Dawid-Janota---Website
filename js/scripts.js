@@ -187,7 +187,7 @@ jQuery(document).ready(function () {
     });
 }
 //Contact Form
-//Cooki
+//Cooki Alert
 function WHCheckCookies() {
     if (!localStorage.cookies_accepted) {
         var cookies_message = document.getElementById("cookies-message");
@@ -201,4 +201,4 @@ function WHCloseCookiesWindow() {
 }
 
 window.onload = WHCheckCookies;
-//Cooki
+//Cooki Alert
