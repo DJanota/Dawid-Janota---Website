@@ -1485,4 +1485,22 @@ footer p a:hover {
     }
 }
 
+@font-face {
+    font-family: "technology-icons";
+    src: url("../fonts/technology-icons.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "technology-icons";
+    src: url("../fonts/technology-icons.eot");
+    src: url("../fonts/technology-icons.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/technology-icons.woff") format("woff"),
+        url("../fonts/technology-icons.ttf") format("truetype"),
+        url("../fonts/technology-icons.svg?#technology-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*# sourceMappingURL=style.css.map */
