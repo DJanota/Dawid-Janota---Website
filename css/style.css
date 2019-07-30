@@ -55,7 +55,7 @@ h5 {
     height: 45px;
     background: #b88b58;
     border-style: none;
-    border-radius: 25px;
+    border-radius: 45px 15px;
     text-align: center;
 
 
@@ -141,55 +141,160 @@ h5 {
 .main .hero {
     position: relative;
     margin: 40px auto;
-    top: -600px
+    top: -650px
 }
 
 .main .hero * {
-    margin: 15px auto;
+    margin: 20px auto;
 }
 
 .main .hero h1 {
     text-transform: uppercase;
     font-weight: 700px;
-    font-size: 72px;
-    line-height: 69px;
+    font-size: 90px;
+    line-height: 80px;
 }
 
 .main .hero h1 span {
     color: #b88b58;
 }
 
-.main .hero h3 {
-    font-size: 24px;
-    font-weight: 400;
+.main .hero h4 {
+    font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
 }
 
 /*Main Button*/
-.hero .btn a {
-    color: #fff;
-    background-color: #b88b58;
-    border: 11px solid #b88b58;
-    text-decoration: none;
-    font-size: 12px;
-    text-align: center;
+.btdown {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.hero .btn:hover a {
-    color: #b88b58;
-    background: #fff;
-    border: 11px solid #fff;
-    text-decoration: none;
-    text-align: center;
+.btdown::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+}
 
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 'Montserrat';
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+
+#knowme a {
+    padding-top: 0px;
+}
+
+#knowme a span {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    margin-left: -30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#knowme a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -11px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#knowme a span:hover {
+    border: 1px solid #b88b58;
+}
+
+
+#knowme a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 54px;
+    height: 54px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+    border-radius: 100%;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb03 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb03 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /*Main Button*/
 /*Main*/
 /*About*/
 .about {
-    margin-top: -320px;
+    margin-top: -300px;
     padding: 10px 0px 20px;
 }
 
@@ -205,14 +310,23 @@ h5 {
 
 .about .face {
     width: 15vw;
-    max-width: 220px;
+    max-width: 320px;
     height: 15vw;
-    max-height: 220px;
+    max-height: 320px;
     margin: 40px auto 30px;
     background-size: cover;
     border: solid #B88B58;
     border-radius: 50%;
+    border-radius: 50% 2%;
+    transition: all 4s;
+    transition-timing: ease-in-out;
+    width: 320px;
 }
+
+.face:hover {
+    transform: rotate(1080deg);
+}
+
 
 .about h3 {
     font-size: 24px;
@@ -221,7 +335,7 @@ h5 {
 }
 
 .about h6 {
-    color: #000;
+    color: #7e7e7e;
     margin-bottom: 50px;
     font-size: 18px;
 }
@@ -234,7 +348,6 @@ h5 {
 }
 
 /*About*/
-
 /*Stack*/
 .stack {
     min-height: 400px;
