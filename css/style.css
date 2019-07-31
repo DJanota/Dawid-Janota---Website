@@ -400,10 +400,6 @@ h5 {
     color: #B88B58;
 }
 
-.skills .fa:hover {
-    animation: rubberBand 1s;
-}
-
 .skills .icon {
     background-color: #1A1A1A;
     border-radius: 50%;
@@ -418,8 +414,17 @@ h5 {
     color: #B88B58;
 }
 
-.skills .icon:hover {
-    animation: rubberBand 1s;
+.skills .iconify {
+    background: #B88B58;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .stack .support {
@@ -476,6 +481,7 @@ h5 {
 
 .projects h1 {
     color: #000;
+    margin-top: 230px;
 }
 
 .projects h5 {
