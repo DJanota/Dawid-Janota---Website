@@ -10,18 +10,6 @@
     background-image: url("../images/djwebdev.png");
 }
 
-.photo-4 {
-    background-image: url("../images/image3.png");
-}
-
-.photo-5 {
-    background-image: url("../images/image4.png");
-}
-
-.photo-6 {
-    background-image: url("../images/image5.png");
-}
-
 .face-1 {
     background-image: url("../images/Dawid%20Janota.jpg");
 }
@@ -49,15 +37,14 @@ h5 {
     text-transform: uppercase;
 }
 
-/*Button*/
+/*Buttons*/
 .btn {
-    width: 160px;
+    width: 150px;
     height: 45px;
     background: #b88b58;
     border-style: none;
-    border-radius: 45px 15px;
+    border-radius: 45px 20px;
     text-align: center;
-
 
 }
 
@@ -67,6 +54,8 @@ h5 {
     text-align: center;
 
 }
+
+/*Buttons*/
 
 /*Menu*/
 .menu {
@@ -365,7 +354,6 @@ h5 {
 
 .stack h3 {
     color: #fff;
-    text-transform: uppercase;
     font-size: 18px;
 }
 
@@ -380,12 +368,7 @@ h5 {
     background-size: cover;
 }
 
-.stack .ico:hover {
-    animation: rubberBand 1s;
-    cursor: pointer;
-}
-
-.skills .fa {
+.skills .express img {
 
     background-color: #1A1A1A;
     border-radius: 50%;
@@ -396,7 +379,48 @@ h5 {
     box-sizing: border-box;
     line-height: 100px;
     text-align: center;
-    cursor: pointer;
+    color: #B88B58;
+}
+
+.skills .redux img {
+
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    color: #B88B58;
+}
+
+.skills .ajax img {
+
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+    color: #B88B58;
+}
+
+.skills .mern img {
+
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    font-size: 80px;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
     color: #B88B58;
 }
 
@@ -410,25 +434,7 @@ h5 {
     box-sizing: border-box;
     line-height: 100px;
     text-align: center;
-    cursor: pointer;
     color: #B88B58;
-}
-
-.skills .iconify {
-    background: #B88B58;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: 0px;
-    font-size: 80px;
-    box-sizing: border-box;
-    line-height: 100px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.stack .support {
-    background-image: url("../images/support.png");
 }
 
 .stack .row {
@@ -557,17 +563,42 @@ h5 {
 }
 
 /*Projects*/
+/*Contact*/
+.contact {
+    padding: 50px;
+    background-color: #1A1A1A;
+    height: 800px;
+}
+
+.contact h1 {
+    color: #fff;
+}
+
+.contact .ct-box {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.contact .ct-box form {
+    margin-top: 40px;
+}
+
 .form {
     margin: 0px auto;
     max-width: 500px;
 }
 
 .form .form-row {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+.form .form-row textarea {
+    margin-top: 25px;
+}
+
+
 .form .form-row:last-child {
-    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .form input[type=text],
@@ -578,28 +609,29 @@ h5 {
 }
 
 .contact .ct-box .form input[type=text] {
-    width: 47%;
-    margin-right: 6%;
-    float: left;
+    width: 100%;
     border-radius: 5px;
     display: block;
     height: 40px;
     padding: 10px;
+    color: black;
 
 }
 
 .contact .ct-box .form input[type=email] {
-    width: 47%;
+    width: 100%;
     border-radius: 5px;
-    display: block;
     height: 40px;
     padding: 10px;
+    color: black;
+
 }
 
 .contact .ct-box .form textarea {
     border-radius: 5px;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     padding: 10px;
+    height: 80px;
     border: 1px solid #aaa;
     display: block;
     width: 100%;
@@ -608,6 +640,8 @@ h5 {
     box-shadow: none;
     border-bottom: 2px solid #ccc;
     -webkit-box-shadow: none;
+    color: black;
+
 }
 
 .contact .ct-box .form input {
@@ -617,31 +651,11 @@ h5 {
     box-shadow: none;
 }
 
-/*
-.contact .ct-box form #name {
-    width: 47%;
-    margin-right: 6%;
-    float: left;
-}
-
-.contact .ct-box form #Email {
-    width: 47%;
-}
-
-.contact .ct-box form #subject {
-    margin-top: 50px;
-}
-
-.contact .ct-box form #message {
-    margin-top: 40px;
-}
-*/
-
 .form input[type=text]:focus,
 .form input[type=email]:focus,
 .form textarea:focus {
-    border-color: #9DC9F5;
-    box-shadow: inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0, 0, 0, 0.07);
+    border-color: #b88b58;
+    box-shadow: inset 0 0 0 1px #b88b58, inset 0 1px 5px rgba(0, 0, 0, 0.07);
     outline: none;
 }
 
@@ -656,13 +670,13 @@ h5 {
     margin-bottom: 0.5rem;
 }
 
+/*Button Send Message*/
 .form .btn {
     background: #b88b58;
     color: #fff;
     cursor: pointer;
     text-transform: capitalize;
-    font-size: 13px;
-
+    font-size: 12px;
 
 }
 
@@ -670,6 +684,8 @@ h5 {
     background: #fff;
     color: #b88b58;
 }
+
+/*Button Send Message*/
 
 .form .checkbox-cnt {
     padding-left: 3rem;
@@ -733,8 +749,9 @@ h5 {
 
 .field-error {
     color: #E01546;
-    padding: 0.rem 0;
+    height: 10px;
     font-size: 0.8rem;
+    text-align: center;
 }
 
 @keyframes checkboxShowAnim {
@@ -785,19 +802,19 @@ h5 {
 
 .form .send-error {
     display: inline-block;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-size: 0.9rem;
     padding: 1rem 1.5rem;
     color: #E01546;
 }
 
 .form-send-success {
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: bold;
-    border: 1px solid #eee;
-    color: #333;
+    border: 2px solid #fff;
+    color: #b88b58;
     padding: 10rem 0;
     margin: 3rem auto;
     max-width: 40rem;
@@ -810,13 +827,13 @@ h5 {
 
 .form-send-success span {
     font-size: 1rem;
-    color: #c6cacc;
+    color: #fff;
     font-weight: normal;
     display: block;
 }
 
 .form span {
-    color: #c6cacc;
+    color: #fff;
 }
 
 @media screen and (max-width:500px) {
@@ -831,78 +848,11 @@ h5 {
     }
 }
 
-/*Contact*/
-.contact {
-    padding: 50px;
-    background-color: #1A1A1A;
-    height: 650px;
-}
-
-.contact h1 {
-    color: #fff;
-}
-
-.contact .ct-box {
-    width: 550px;
-    margin: 0 auto;
-}
-
-/*
-.contact .ct-box .btn {
-    margin-bottom: 100px;
-    width: 160px;
-    height: 45px;
-    border-radius: 25px;
-    border-style: none;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 35px;
-    color: #fff;
-}
-
-.contact .ct-box .btn:hover {
-    color: #b88b58;
-}
-*/
-
-.contact .ct-box form {
-    margin-top: 50px;
-}
-
-/*
-.contact .ct-box form input {
-    border: none;
-    border-bottom: 2px solid #ccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-*/
-
-/*
-.contact .ct-box form #name {
-    width: 47%;
-    margin-right: 6%;
-    float: left;
-}
-
-.contact .ct-box form #Email {
-    width: 47%;
-}
-
-.contact .ct-box form #subject {
-    margin-top: 50px;
-}
-
-.contact .ct-box form #message {
-    margin-top: 40px;
-}*/
-
 /*Contact 2*/
 .contact2 {
     background-color: #1A1A1A;
     color: #fff;
-    padding-bottom: 50px;
+    margin-top: 130px;
 }
 
 .contact2 .social-button {
@@ -966,10 +916,10 @@ h5 {
 .download .btn a {
     margin-top: 2vh;
     color: #fff;
-    border: 13px solid #b88b58;
+    border: 11px solid #b88b58;
     text-decoration: none;
     width: 160px;
-    font-size: 13px;
+    font-size: 12px;
 
 }
 
@@ -982,8 +932,9 @@ h5 {
     color: #b88b58;
     background-color: #fff;
     text-decoration: none;
-    border: 13px solid #fff;
-    width: 160px;
+    border: 11px solid #fff;
+    border-radius: 45px 20px;
+    border-width: 13px;
 
 
 
