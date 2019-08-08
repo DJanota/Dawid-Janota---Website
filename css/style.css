@@ -1387,10 +1387,22 @@ footer p a:hover {
 
 @media (max-width: 650px) {
 
+    h1 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
     /*    logo*/
 
     .menu .nav .logo {
-        margin: 20px calc(50% - 135px) 0;
+        margin: 20px calc(50% - 85px) 0;
         float: clear;
         height: 90px;
         width: 280px;
@@ -1399,15 +1411,30 @@ footer p a:hover {
     /*    logo*/
 
 
+    .menu {
+        height: 490px;
+    }
+
     .main .hero {
-        top: -52vw;
+        top: -45vw;
     }
 
     .main .hero h1 {
         font-size: 30px;
-        line-height: 30px;
+        line-height: 15px;
     }
 
+    .main .hero h4 {
+        font-size: 15px;
+    }
+
+    #knowme a span {
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+
+    /*
     .main .hero h3 {
         font-size: 16px;
     }
@@ -1415,6 +1442,7 @@ footer p a:hover {
     .main .carousel-indicators {
         display: none;
     }
+*/
 
     /*    about*/
 
@@ -1427,36 +1455,29 @@ footer p a:hover {
 
     }
 
+    .about h3 {
+        font-size: 20px;
+
+    }
+
+    .about h6 {
+        font-size: 15px;
+
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .about .face {
+        min-height: 240px;
+    }
 
     /*about*/
 
-    .team .carousel img {
-        height: 550px;
-    }
+    /*stack*/
 
-    .team .row .col {
-        width: 48%;
-    }
 
-    .team .row .col:nth-child(3) {
-        display: none;
-    }
-
-    .team .row .col h3 {
-        font-size: 16px;
-    }
-
-    .team .row .col p {
-        font-size: 11px;
-    }
-
-    .team .row .col .row .col {
-        width: 33px;
-    }
-
-    .team .row .col .row .col:nth-child(3) {
-        display: inline-block;
-    }
 
     .projects .nav-tabs {
         width: 130px;
@@ -1567,6 +1588,7 @@ footer p a:hover {
     }
 }
 
+/*
 @font-face {
     font-family: "technology-icons";
     src: url("../fonts/technology-icons.eot");
@@ -1585,4 +1607,5 @@ footer p a:hover {
     font-style: normal;
 }
 
-/*# sourceMappingURL=style.css.map */
+# sourceMappingURL=style.css.map
+*/
