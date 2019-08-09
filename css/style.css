@@ -357,10 +357,6 @@ h5 {
     font-size: 18px;
 }
 
-.stack p {
-    font-size: 12px;
-}
-
 .stack .ico {
     width: 80px;
     height: 80px;
@@ -377,9 +373,11 @@ h5 {
     margin: 0px;
     font-size: 80px;
     box-sizing: border-box;
-    line-height: 100px;
+    line-height: 130px;
     text-align: center;
     color: #B88B58;
+    margin-top: 30px;
+
 }
 
 .skills .redux img {
@@ -391,9 +389,11 @@ h5 {
     margin: 0px;
     font-size: 80px;
     box-sizing: border-box;
-    line-height: 100px;
+    line-height: 130px;
     text-align: center;
     color: #B88B58;
+    margin-top: 30px;
+
 }
 
 .skills .ajax img {
@@ -405,9 +405,11 @@ h5 {
     margin: 0px;
     font-size: 80px;
     box-sizing: border-box;
-    line-height: 100px;
+    line-height: 130px;
     text-align: center;
     color: #B88B58;
+    margin-top: 30px;
+
 }
 
 .skills .mern img {
@@ -419,9 +421,10 @@ h5 {
     margin: 0px;
     font-size: 80px;
     box-sizing: border-box;
-    line-height: 100px;
+    line-height: 130px;
     text-align: center;
     color: #B88B58;
+    margin-top: 30px;
 }
 
 .skills .icon {
@@ -432,7 +435,7 @@ h5 {
     margin: 0px;
     font-size: 80px;
     box-sizing: border-box;
-    line-height: 100px;
+    line-height: 130px;
     text-align: center;
     color: #B88B58;
 }
@@ -1057,6 +1060,7 @@ footer p a:hover {
     border-color: white;
 }
 
+/*
 @media (max-width: 1360px) {
 
     .menu .nav {
@@ -1083,8 +1087,11 @@ footer p a:hover {
     .main .hero {
         top: -40vw;
     }
+*/
 
-    /*    about*/
+/*    about*/
+
+/*
     .about {
         margin-top: -60px;
     }
@@ -1093,17 +1100,62 @@ footer p a:hover {
         padding: 10px;
     }
 
-    */
-    /*about*/
+    
+*/
+/*about*/
 
+/*
     .fixed {
         top: 530px;
         margin-top: -65px;
     }
 }
+*/
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 
+    .section {
+        width: 1150px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .stack {
+        width: 100%;
+    }
+
+    .projects {
+        width: 100%
+    }
+
+    .contact {
+        width: 100%
+    }
+
+    .download {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+
+
+
+
+
+    /*
     .menu .nav {
         width: 960px;
 
@@ -1112,8 +1164,10 @@ footer p a:hover {
     .main .hero {
         top: -45vw;
     }
+*/
 
     /*    about*/
+    /*
     .about {
         margin-top: -50px;
     }
@@ -1121,10 +1175,12 @@ footer p a:hover {
     .about .container {
         padding: 10px;
     }
+*/
 
 
     /*about*/
 
+    /*
     .team .row .col-fa {
         margin: 1.5vw 2px;
     }
@@ -1132,10 +1188,12 @@ footer p a:hover {
     .clients .carousel-caption {
         padding: 0 8vw;
     }
+*/
 }
 
-@media (max-width: 992px) {
+/*@media (max-width: 1200px) and (min-width: 1000px) {*/
 
+/*
     .main .hero {
         top: -47vw;
     }
@@ -1144,17 +1202,21 @@ footer p a:hover {
         width: 100%;
         min-height: 200px;
     }
+*/
 
-    /*    logo*/
+/*    logo*/
+/*
     .menu .nav .logo {
         margin: 20px calc(50% - 145px) 0;
         float: clear;
         height: 90px;
         width: 280px;
     }
+*/
 
-    /*    logo*/
+/*    logo*/
 
+/*
     .menu .nav ul {
         width: 100%;
     }
@@ -1162,8 +1224,10 @@ footer p a:hover {
     .menu .nav ul li {
         float: clear;
     }
+*/
 
-    /*    about*/
+/*    about*/
+/*
     .about {
         margin-top: -40px;
     }
@@ -1171,11 +1235,13 @@ footer p a:hover {
     .about .container {
         padding: 10px;
     }
+*/
 
 
-    /*about*/
+/*about*/
 
 
+/*
     .team .carousel img {
         height: 650px;
     }
@@ -1239,21 +1305,25 @@ footer p a:hover {
     #myModal1 .modal-footer .modal-socials .modal-numbers {
         display: none;
     }
+*/
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 1000px) and (min-width: 800px) {*/
 
-    /*    logo*/
+/*    logo*/
+/*
     .menu .nav .logo {
         margin: 20px calc(50% - 145px) 0;
         float: clear;
         height: 90px;
         width: 280px;
     }
+*/
 
-    /*    logo*/
+/*    logo*/
 
 
+/*
     .main .hero {
         top: -55vw;
     }
@@ -1272,9 +1342,11 @@ footer p a:hover {
         margin: 0 5%;
         text-align: center;
     }
+*/
 
-    /*    about*/
+/*    about*/
 
+/*
     .about {
         margin-top: -30px;
     }
@@ -1282,11 +1354,13 @@ footer p a:hover {
     .about .container {
         padding: 10px;
     }
+*/
 
 
-    /*about*/
+/*about*/
 
 
+/*
     .team .carousel img {
         height: 600px;
     }
@@ -1338,7 +1412,9 @@ footer p a:hover {
         padding: 30px;
         height: 150px;
     }
+*/
 
+/*
     .share .col {
         height: 55px;
         float: clear;
@@ -1383,10 +1459,49 @@ footer p a:hover {
     #myModal1 .modal-body #carousel-example-generic9 .carousel-control {
         top: 55vw;
     }
+*/
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) and (min-width: 500px) {
 
+    .section {
+        width: 60%;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .main {
+        width: 50%;
+    }
+
+    .about {
+        width: 50%;
+    }
+
+    .stack {
+        width: 50%;
+    }
+
+    .projects {
+        width: 50%
+    }
+
+    .contact {
+        width: 50%
+    }
+
+    .download {
+        width: 50%;
+    }
+
+    .footer {
+        width: 50%;
+    }
+
+
+    /*
     h1 {
         font-size: 25px;
     }
@@ -1398,19 +1513,23 @@ footer p a:hover {
     p {
         font-size: 12px;
     }
+*/
 
     /*    logo*/
 
+    /*
     .menu .nav .logo {
         margin: 20px calc(50% - 85px) 0;
         float: clear;
         height: 90px;
         width: 280px;
     }
+*/
 
     /*    logo*/
 
 
+    /*
     .menu {
         height: 490px;
     }
@@ -1433,6 +1552,7 @@ footer p a:hover {
         height: 50px;
         margin-top: -10px;
     }
+*/
 
     /*
     .main .hero h3 {
@@ -1446,6 +1566,7 @@ footer p a:hover {
 
     /*    about*/
 
+    /*
     .about {
         margin-top: -20px;
     }
@@ -1472,75 +1593,207 @@ footer p a:hover {
     .about .face {
         min-height: 240px;
     }
+*/
 
     /*about*/
-
-    /*stack*/
-
-
-
-    .projects .nav-tabs {
-        width: 130px;
+    /*Stack*/
+    /*
+    .stack {
+        height: 100%;
+        background: #1A1A1A;
+        padding: 30px;
     }
 
-    .projects .nav-tabs * {
-        font-size: 12px;
+    .stack .row {
+        margin-left: 50px;
+        border-left: 1.5px solid #bebebe;
     }
 
-    .projects .nav-tabs li a {
+    .stack .row .col {
+        border-right: 1.5px solid #bebebe;
+        padding: 20px;
+        height: 130px;
+        width: 350px;
+    }
+
+    .skills h3 {
+        font-size: 15px;
+    }
+*/
+
+    /*
+    .skills .icon {
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
         box-sizing: border-box;
-        width: 130px;
+        line-height: 50px;
+        text-align: center;
+        color: #B88B58;
     }
 
+    .skills .express img {
+
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        box-sizing: border-box;
+        line-height: 50px;
+        text-align: center;
+        color: #B88B58;
+
+    }
+
+    .skills .redux img {
+
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        box-sizing: border-box;
+        line-height: 50px;
+        text-align: center;
+        color: #B88B58;
+
+    }
+
+    .skills .ajax img {
+
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        box-sizing: border-box;
+        line-height: 50px;
+        text-align: center;
+        color: #B88B58;
+
+    }
+*/
+
+    /*
+    .skills .mern img {
+
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        box-sizing: border-box;
+        line-height: 50px;
+        text-align: center;
+        color: #B88B58;
+    }
+
+
+    .stack #carousel-example-generic2 {
+        height: 0%;
+        width: 450px;
+    }
+
+    .stack #carousel-example-generic2 .carousel-inner {
+        height: 500px;
+    }
+
+    .stack #carousel-example-generic2 .carousel-indicators {
+        bottom: 0px;
+    }
+
+    .carousel-indicators li {
+        border-color: #b88b58;
+    }
+
+    .carousel-indicators .active {
+        background-color: #b88b58;
+    }
+*/
+
+    /*Stack*/
+    /*    Projects*/
+    /*
     .projects .col {
         width: 98%;
     }
+*/
 
-    .products .row .col p {
-        font-size: 12px;
-    }
+    /*    Projects*/
+    /*    Contact*/
 
+    /*
     .contact {
         padding: 20px 0;
+        height: 750px;
     }
 
     .contact .ct-box {
         width: 310px;
     }
 
-    .map {
-        padding: 28px 15px;
-        background-position: 60%;
+    Contact 2
+    .contact2 {
+        margin-top: 30px;
     }
 
-    .map .place-info {
-        width: 280px;
-        padding: 10px 20px;
+    .contact2 h4 {
+        margin-top: 15px;
     }
+*/
 
-    .map .place-info .col {
-        height: 60px;
-    }
-
-    .map .place-info .col i {
-        margin: 0 20px 0 0;
-    }
-
-    .fixed {
-        width: 94vw;
-    }
-
-    #myModal1 .modal-body .mini-photos img {
-        display: none;
-    }
-
-    #myModal1 .modal-footer p {
-        font-size: 10px;
-    }
+    /*Contact 2*/
+    /*    Contact*/
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
 
+    .section {
+        width: 60%;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .main {
+        width: 50%;
+    }
+
+    .about {
+        width: 50%;
+    }
+
+    .stack {
+        width: 50%;
+    }
+
+    .projects {
+        width: 50%
+    }
+
+    .contact {
+        width: 50%
+    }
+
+    .download {
+        width: 50%;
+    }
+
+    .footer {
+        width: 50%;
+    }
+
+
+    /*
     .menu .nav ul li {
         width: 50%;
         margin: 0;
@@ -1549,43 +1802,8 @@ footer p a:hover {
     .main .btn {
         display: none;
     }
+*/
 
-    .prices p {
-        font-size: 12px;
-    }
-
-    .clients p {
-        font-size: 12px;
-    }
-
-    .share .col .col {
-        float: clear;
-        width: 32px;
-    }
-
-    .share .fa {
-        margin: 10px 0;
-    }
-
-    #myModal1 .modal-footer p {
-        font-size: 10px;
-    }
-
-    #myModal1 .modal-footer .modal-socials {
-        width: 80px;
-        float: left;
-    }
-
-    #myModal1 .modal-footer .modal-socials .fa {
-        width: 30px;
-        height: 30px;
-        margin: 2px 5px 2px;
-        font-size: 20px;
-        box-sizing: border-box;
-        line-height: 30px;
-        text-align: center;
-        cursor: pointer;
-    }
 }
 
 /*
