@@ -39,6 +39,7 @@ h5 {
     text-transform: uppercase;
     text-align: center;
 
+
 }
 
 /*Buttons*/
@@ -77,12 +78,12 @@ h5 {
 
 .sidebar {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 
 /*Logo*/
-.menu .nav .logo a {
+.menu .sidebar .nav .logo a {
     float: left;
     margin: 15px 0px 0px 0px;
     height: 90px;
@@ -300,7 +301,7 @@ h5 {
 .about {
     background: #fff;
     height: 850px;
-    padding: 50px;
+    padding: 25px;
 }
 
 .about .container {
@@ -356,7 +357,7 @@ h5 {
 .stack {
     min-height: 400px;
     background: #1A1A1A;
-    padding: 50px;
+    padding: 35px;
 }
 
 .stack h1 {
@@ -532,7 +533,6 @@ h5 {
     height: 400px;
     width: 350px;
     margin: 1px;
-
     z-index: 3;
     background-size: cover;
     background-position: center;
@@ -566,6 +566,8 @@ h5 {
 
 .projects .col .layer .photo-ico p {
     color: #fff;
+    text-align: justify;
+
 }
 
 .projects .col:hover .layer {
@@ -1097,16 +1099,21 @@ footer p a:hover {
 
     /*Menu*/
     /*    logo*/
-    /*
-    .menu .container .nav .logo {
-        margin: 10px calc(10% - 0px) 0;
+
+    .menu .nav .logo {
+
+        margin: 10px calc(50% - 130px) 0;
         float: clear;
         height: 0px;
         width: 0px;
 
-
     }
-*/
+
+    .logo .col {
+        height: 150px;
+        padding: 50px 0 50px 40px;
+    }
+
 
     /*    logo*/
     .menu {
@@ -1114,17 +1121,22 @@ footer p a:hover {
         height: 100%;
     }
 
+    /*
     .menu .nav {
         width: 100%;
         margin: 0 auto;
         height: 100%;
-    }
+    }*/
+
 
     .sidebar {
         width: 100%;
         height: 100%;
+        padding: 0;
     }
 
+
+    /*
     .menu .nav ul {
         width: 100%;
         padding: 0px;
@@ -1132,6 +1144,7 @@ footer p a:hover {
         display: inline-block;
         margin-top: 10px;
     }
+*/
 
     .menu .nav ul a * {
         line-height: 100px;
@@ -1144,15 +1157,27 @@ footer p a:hover {
         margin: 0;
     }
 
+    .menu .nav {
+        min-height: 600px;
+    }
+
+    .menu .nav ul li {
+        width: 40%;
+        display: block;
+        margin: 0 5%;
+        text-align: center;
+    }
+
     /*Menu*/
     /*Jumborton*/
     .main img {
         width: 100%;
         height: 100%;
+
     }
 
     .main .hero {
-        top: -50vw;
+        top: -55vw;
     }
 
     .main .hero h1 {
@@ -1165,9 +1190,15 @@ footer p a:hover {
     }
 
     #knowme a span {
-        width: 50px;
-        height: 50px;
-        margin-top: -10px;
+        width: 45px;
+        height: 45px;
+        margin-top: -20px;
+        margin-left: -25px;
+    }
+
+    #knowme a span::before {
+        width: 43px;
+        height: 43px;
     }
 
     /*
@@ -1185,7 +1216,7 @@ footer p a:hover {
 
 
     .about {
-        margin-top: -160px;
+        margin-top: -158px;
         height: 100%;
         width: 100%;
     }
@@ -1228,6 +1259,7 @@ footer p a:hover {
         height: 100%;
         width: 100%;
         background: #1A1A1A;
+        padding: 25px;
     }
 
     .stack .row {
@@ -1347,9 +1379,39 @@ footer p a:hover {
     }
 
     .projects .col {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 
+
+    .photo-1 {
+        background-image: url("../images/djwebdev.png");
+        max-height: 220px;
+    }
+
+    .photo-2 {
+        background-image: url("../images/laptop.jpg");
+        max-height: 220px;
+
+    }
+
+    .photo-3 {
+        background-image: url("../images/Original.png");
+        max-height: 220px;
+
+    }
+
+    .projects .col {
+        height: 220px;
+    }
+
+    .projects .col .layer .photo-ico {
+        cursor: pointer;
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 0px;
+    }
 
     /*    Projects*/
     /*    Contact*/
