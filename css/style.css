@@ -688,6 +688,7 @@ h5 {
     display: block;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
+    text-align: justify;
 }
 
 /*Button Send Message*/
@@ -1081,10 +1082,6 @@ footer p a:hover {
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
-    body {
-        background-color: red;
-    }
-
     h1 {
         font-size: 20px;
     }
@@ -1259,7 +1256,9 @@ footer p a:hover {
         height: 100%;
         width: 100%;
         background: #1A1A1A;
-        padding: 25px;
+        padding: 35px;
+        min-height: 750px;
+
     }
 
     .stack .row {
@@ -1407,10 +1406,11 @@ footer p a:hover {
 
     .projects .col .layer .photo-ico {
         cursor: pointer;
-        width: 80%;
+        width: 85%;
         font-size: 12px;
         text-align: center;
-        padding-top: 0px;
+        margin: 30px auto;
+
     }
 
     /*    Projects*/
@@ -1418,8 +1418,8 @@ footer p a:hover {
 
 
     .contact {
-        padding: 20px 0;
-        height: 750px;
+        padding: 35px 0;
+        min-height: 750px;
     }
 
     .contact .ct-box {
