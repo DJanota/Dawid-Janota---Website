@@ -167,7 +167,7 @@ jQuery(document).ready(function () {
                             const div = document.createElement('div');
                             div.classList.add('form-send-success');
 
-                            div.innerHTML = 'Message was sent successfully!<span>Thank you for contact. I will try to answer as soon as possible.</span>';
+                            div.innerHTML = 'Message was sent successfully!<span>Thank you for contact.</span><span>I will try to answer as soon as possible.</span>';
                             form.parentElement.insertBefore(div, form);
                             form.remove();
                         }
@@ -176,7 +176,7 @@ jQuery(document).ready(function () {
                             //komunikat błędu, niepowodzenia
                             const div = document.createElement('div');
                             div.classList.add('send-error');
-                            div.innerText = 'The message has not been sent. Please try again.';
+                            div.innerText = 'The message has not been sent!<span>Please try again.</span>';
                         }
                     }
                 }).catch(_ => {
