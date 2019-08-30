@@ -1,3 +1,12 @@
+//Button Down
+$(function () {
+    $('a[href*=#]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+});
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -32,38 +41,13 @@ $('a[href*="#"]')
             }
         }
     });
-//Button back
-var btn = $('#button');
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
-    }
-});
-
-btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, '300');
-});
-//Button back
-jQuery(document).ready(function () {
-    var downloadButton = jQuery('.et-download-button');
-
-    downloadButton.each(function (index) {
-        jQuery(this).attr('download', 'pdf-file');
-    });
-});
-
+//Button Down
 //Contact Form
 {
     const form = document.querySelector('#contactForm');
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
 
-    //wyłączamy domyślną walidację
+    //Wyłączamy domyślną walidację
     form.setAttribute('novalidate', true);
 
     const displayFieldError = function (elem) {
@@ -110,8 +94,8 @@ jQuery(document).ready(function () {
     });
 
     const checkFieldsErrors = function (elements) {
-        //ustawiamy zmienną na true. Następnie robimy pętlę po wszystkich polach
-        //jeżeli któreś z pól jest błędne, przełączamy zmienną na false.
+        //Zmienna true. Pętla po wszystkich polach
+        //Jeżeli któreś z pól jest błędne, przełączamy zmienną na false
         let fieldsAreValid = true;
 
         [...elements].forEach(elem => {
@@ -131,7 +115,7 @@ jQuery(document).ready(function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        //jeżeli wszystkie pola są poprawne...
+        //Wszystkie pola poprawne
         if (checkFieldsErrors(inputs)) {
             const elements = form.querySelectorAll('input:not(:disabled), textarea:not(:disabled), select:not(:disabled)');
 
@@ -163,7 +147,7 @@ jQuery(document).ready(function () {
 
                     } else {
                         if (ret.status === 'ok') {
-                            //wyświetlamy komunikat powodzenia, cieszymy sie
+                            //komunikat powodzenia
                             const div = document.createElement('div');
                             div.classList.add('form-send-success');
 
@@ -187,7 +171,34 @@ jQuery(document).ready(function () {
     });
 }
 //Contact Form
-//Cooki Alert
+//Download
+jQuery(document).ready(function () {
+    var downloadButton = jQuery('.et-download-button');
+
+    downloadButton.each(function (index) {
+        jQuery(this).attr('download', 'pdf-file');
+    });
+});
+//Download
+//Button Back
+var btn = $('#button');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
+});
+//Button Back
+//Cookies
 function WHCheckCookies() {
     if (!localStorage.cookies_accepted) {
         var cookies_message = document.getElementById("cookies-message");
@@ -201,15 +212,4 @@ function WHCloseCookiesWindow() {
 }
 
 window.onload = WHCheckCookies;
-//Cooki Alert
-
-//Button Down
-$(function () {
-    $('a[href*=#]').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 500, 'linear');
-    });
-});
-//Button Down
+//Cookies
