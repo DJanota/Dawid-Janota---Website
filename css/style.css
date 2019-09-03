@@ -123,6 +123,7 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #fff;
+    font-size: 18px;
 }
 
 /*Button*/
@@ -780,7 +781,7 @@ h5 {
 
 /*Button*/
 .form .send-error {
-    font-size: 15px;
+    font-size: 18px;
     padding: 1rem 1.5rem;
     color: #E01546;
     font-family: 'Montserrat';
@@ -788,7 +789,7 @@ h5 {
 }
 
 .form-send-success {
-    font-size: 15px;
+    font-size: 18px;
     max-width: 40rem;
     padding: 10rem 0;
     margin: 3rem auto;
@@ -883,7 +884,7 @@ h5 {
 /*Social Buttons*/
 /*Contact 2*/
 /*Contact*/
-/*Buttons*/
+/*Buttons - Contact, Download*/
 .btn {
     width: 150px;
     height: 45px;
@@ -899,7 +900,7 @@ h5 {
     text-align: center;
 }
 
-/*Buttons*/
+/*Buttons - Contact, Download*/
 /*Download*/
 .download {
     padding-top: 5%;
@@ -1011,6 +1012,7 @@ footer p a:hover {
     left: 0;
     right: 0;
     z-index: 100000;
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     display: none;
@@ -1051,57 +1053,55 @@ footer p a:hover {
 }
 
 /*Modal*/
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
 
-    /*Fonts*/
-    h1 {
-        font-size: 25px;
-        margin: 0px;
+/*Media*/
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*
+@media (min-width: 1200px) {
+
+
+    body {
+        background: green;
     }
 
-    h5 {
-        margin-top: 0px;
-        font-size: 14px;
-    }
+}
+*/
 
-    p {
-        font-size: 13px;
-    }
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
-    /*Fonts*/
     /*Menu*/
     .menu {
         width: 100%;
         height: 100%;
     }
 
+    .menu .nav {
+        min-height: 550px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
     /*Logo*/
     .menu .nav .logo {
-        margin: 10px calc(50% - 140px) 0;
         float: clear;
+        margin: 10px calc(50% - 140px) 0;
         height: 0px;
         width: 0px;
     }
 
     /*Logo*/
 
-    .sidebar {
-        width: 100%;
-        height: 100%;
-        padding: 0 70px;
-    }
-
-    .menu .nav {
-        min-height: 550px;
-    }
-
     .menu .nav ul {
         width: 100%;
-        padding: 0px;
-        min-height: 400px;
+        min-height: 435px;
+        margin-top: 0px;
+        padding: 0 170px;
         display: inline-block;
-        margin-top: 10px;
     }
 
     .menu .nav ul li {
@@ -1111,9 +1111,9 @@ footer p a:hover {
 
     .menu .nav ul li {
         width: 40%;
-        display: block;
         margin: 0 5%;
         text-align: center;
+        display: block;
     }
 
     .menu .nav ul a * {
@@ -1129,12 +1129,12 @@ footer p a:hover {
     }
 
     .main .hero {
-        top: -43vw;
+        top: -40vw;
     }
 
     .main .hero h1 {
-        font-size: 45px;
-        line-height: 30px;
+        font-size: 70px;
+        line-height: 50px;
     }
 
     .main .hero h4 {
@@ -1143,68 +1143,44 @@ footer p a:hover {
 
     /*Button*/
     #knowme a span {
-        width: 50px;
-        height: 50px;
-        margin-top: -10px;
+        margin-top: 5px;
         margin-left: -25px;
     }
 
     #knowme a span::before {
-        width: 48px;
-        height: 48px;
+        width: 43px;
+        height: 43px;
     }
 
     /*Button*/
     /*Jumbotron*/
-    /*About*/
+    /*About Me*/
     .about {
-        margin-top: -197px;
+        margin-top: -24%;
         min-height: 100%;
         min-width: 100%;
-        padding: 35px;
-    }
-
-    .about .container {
-        padding: 0 70px;
     }
 
     .about .face {
-        min-height: 230px;
-        max-width: 230px;
+        min-height: 250px;
+        max-width: 250px;
+        margin: auto;
     }
 
-    .about h3 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .about h6 {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .about p {
-        font-size: 13px;
-        text-align: justify;
-        margin: 0 auto;
-    }
-
-    /*About*/
-    /*Stack*/
+    /*About Me*/
+    /*Stack Technology*/
     .stack {
         min-height: 750px;
         min-width: 100%;
         background: #1A1A1A;
-        padding: 35px;
+        padding: 35px 200px;
     }
 
     .stack .row {
         margin: 0 auto;
-        border-left: 2px solid #bebebe;
     }
 
     .stack .row .col {
-        border-right: 2px solid #bebebe;
         padding: 20px;
         height: 100%;
         width: 100%;
@@ -1212,47 +1188,43 @@ footer p a:hover {
     }
 
     .skills .icon {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .skills .express img {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .skills .redux img {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .skills .ajax img {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .skills .mern img {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
-    }
-
-    .skills h3 {
-        font-size: 15px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .stack #carousel-example-generic2 {
@@ -1268,191 +1240,101 @@ footer p a:hover {
         bottom: -40px;
     }
 
-    /*Stack*/
+    /*Stack Technology*/
     /*Projects*/
     .projects {
         background-image: url(../images/projects-mobile.png);
         background-position: center;
     }
 
-    .projects .col {
-        min-width: 100%;
-        height: auto;
-        height: 350px;
-    }
-
-    .projects .col .layer .photo-ico {
-        cursor: pointer;
-        width: 85%;
-        font-size: 12px;
-        text-align: center;
-        margin: 30px auto;
-    }
-
-    .photo-1 {
-        background-image: url("../images/djwd-logo-black.png");
-        max-height: 350px;
-    }
-
-    .photo-2 {
-        background-image: url("../images/laptop-img.jpg");
-        max-height: 350px;
-    }
-
-    .photo-3 {
-        background-image: url("../images/djwd-logo-white.png");
-        max-height: 350px;
-    }
-
     .projects h1 {
         margin-top: 150px;
     }
 
+    .photo-1 {
+        max-height: 250px;
+    }
+
+    .photo-2 {
+        max-height: 250px;
+    }
+
+    .photo-3 {
+        max-height: 250px;
+    }
+
     .projects .col .layer .photo-ico h5 {
-        font-size: 18px
+        font-size: 15px
     }
 
     .projects p {
+        font-size: 10px;
+    }
+
+    .projects .col {
+        width: 32.7%;
+        height: 250px;
+        height: auto;
+    }
+
+    .projects .col .layer .photo-ico {
+        width: 85%;
         font-size: 12px;
+        margin: 30px auto;
     }
 
     /*Projects*/
     /*Contact*/
     .contact {
         padding: 35px 0;
-        min-height: 100%;
     }
 
-    .contact .ct-box {
-        width: 450px;
-    }
-
-    .contact .ct-box form {
-        margin-top: 20px;
-    }
-
-    .contact2 {
-        margin-top: 55px;
-    }
-
-    .contact2 h4 {
-        margin-top: 16px;
-        font-size: 14px;
-    }
-
-    /*Button*/
-    .btn {
-        width: 145px;
-        height: 40px;
-    }
-
-    /*Button*/
-    /*Form*/
-    .form-send-success {
-        font-size: 16px;
-    }
-
-    .form .send-error {
-        font-size: 16px;
-    }
-
-    /*Form*/
     /*Contact*/
-    /*Download*/
-    /*Button*/
-    .download {
-        min-height: 100%;
-        min-width: 100%;
-        padding: 100px 0;
-    }
 
-    .download .btn:hover a {
-        border-width: 11px;
-    }
-
-    /*Button*/
-    /*Download*/
-    /*Button Back*/
-    #button {
-        width: 48px;
-        height: 48px;
-        right: 10px;
-    }
-
-    #button::after {
-        font-size: 1.5em;
-        line-height: 48px;
-    }
-
-    #button:hover {
-        transform: scale(1.1);
-    }
-
-    /*Button Back*/
     /*Cookies*/
     #cookies-message {
         font-size: 12px;
     }
 
     /*Cookies*/
-    body {
-        background: blue;
-    }
 
 }
 
-/*Media*/
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-    /*Fonts*/
-    h1 {
-        font-size: 23px;
-        margin: 0px;
-    }
-
-    h5 {
-        margin-top: 0px;
-        font-size: 13px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    /*Fonts*/
     /*Menu*/
     .menu {
         width: 100%;
         height: 100%;
     }
 
+    .menu .nav {
+        min-height: 550px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
     /*Logo*/
     .menu .nav .logo {
-        margin: 10px calc(50% - 135px) 0;
         float: clear;
+        margin: 10px calc(50% - 140px) 0;
         height: 0px;
         width: 0px;
     }
 
     /*Logo*/
 
-    .sidebar {
-        width: 100%;
-        height: 100%;
-        padding: 0 70px;
-    }
-
-    .menu .nav {
-        min-height: 550px;
-    }
-
     .menu .nav ul {
         width: 100%;
-        padding: 0px;
-        min-height: 400px;
-        display: inline-block;
+        min-height: 425px;
         margin-top: 10px;
+        padding: 0 100px;
+        display: inline-block;
     }
 
     .menu .nav ul li {
@@ -1462,9 +1344,9 @@ footer p a:hover {
 
     .menu .nav ul li {
         width: 40%;
-        display: block;
         margin: 0 5%;
         text-align: center;
+        display: block;
     }
 
     .menu .nav ul a * {
@@ -1480,23 +1362,23 @@ footer p a:hover {
     }
 
     .main .hero {
-        top: -43vw;
+        top: -40vw;
     }
 
     .main .hero h1 {
-        font-size: 30px;
-        line-height: 15px;
+        font-size: 40px;
+        line-height: 20px;
     }
 
     .main .hero h4 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     /*Button*/
     #knowme a span {
         width: 45px;
         height: 45px;
-        margin-top: -20px;
+        margin-top: -5px;
         margin-left: -25px;
     }
 
@@ -1507,21 +1389,33 @@ footer p a:hover {
 
     /*Button*/
     /*Jumbotron*/
-    /*About*/
+    /*Fonts - headline (About Me, Technology, Projects, Contact, Download)*/
+    h1 {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    h5 {
+        margin-top: 0px;
+        font-size: 13px;
+    }
+
+    /*Fonts - headline (About Me, Technology, Projects, Contact, Download)*/
+    /*About Me*/
     .about {
-        margin-top: -167px;
+        margin-top: -178px;
         min-height: 100%;
         min-width: 100%;
         padding: 35px;
     }
 
     .about .container {
-        padding: 0px;
+        padding: 0px 100px;
     }
 
     .about .face {
-        min-height: 220px;
-        max-width: 220px;
+        min-height: 230px;
+        max-width: 230px;
         margin: auto;
     }
 
@@ -1531,22 +1425,22 @@ footer p a:hover {
     }
 
     .about h6 {
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
     }
 
     .about p {
-        font-size: 12px;
+        font-size: 13px;
         text-align: justify;
     }
 
-    /*About*/
-    /*Stack*/
+    /*About Me*/
+    /*Stack Technology*/
     .stack {
         min-height: 750px;
         min-width: 100%;
         background: #1A1A1A;
-        padding: 35px;
+        padding: 35px 150px;
     }
 
     .stack .row {
@@ -1563,47 +1457,47 @@ footer p a:hover {
     }
 
     .skills .icon {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .skills .express img {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .skills .redux img {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .skills .ajax img {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .skills .mern img {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         margin: 0px;
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .skills h3 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .stack #carousel-example-generic2 {
@@ -1619,25 +1513,15 @@ footer p a:hover {
         bottom: -40px;
     }
 
-    /*Stack*/
+    /*Stack Technology*/
     /*Projects*/
     .projects {
         background-image: url(../images/projects-mobile.png);
         background-position: center;
     }
 
-    .projects .col {
-        width: 100%;
-        height: auto;
-        height: 220px;
-    }
-
-    .projects .col .layer .photo-ico {
-        cursor: pointer;
-        width: 85%;
-        font-size: 12px;
-        text-align: center;
-        margin: 30px auto;
+    .projects h1 {
+        margin-top: 150px;
     }
 
     .photo-1 {
@@ -1655,16 +1539,24 @@ footer p a:hover {
         max-height: 220px;
     }
 
-    .projects h1 {
-        margin-top: 150px;
-    }
-
     .projects .col .layer .photo-ico h5 {
-        font-size: 16px
+        font-size: 15px
     }
 
     .projects p {
+        font-size: 10px;
+    }
+
+    .projects .col {
+        width: 32.7%;
+        height: 220px;
+        height: auto;
+    }
+
+    .projects .col .layer .photo-ico {
+        width: 85%;
         font-size: 12px;
+        margin: 30px auto;
     }
 
     /*Projects*/
@@ -1682,41 +1574,43 @@ footer p a:hover {
         margin-top: 20px;
     }
 
+    /*Contact 2*/
     .contact2 {
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     .contact2 h4 {
-        margin-top: 16px;
-        font-size: 14px;
+        margin-top: 15px;
+        font-size: 13px;
     }
 
-    /*Button*/
+    /*Contact 2*/
+    /*Form*/
+    .form-send-success {
+        font-size: 15px;
+    }
+
+    .form .send-error {
+        font-size: 15px;
+    }
+
+    /*Form*/
+    /*Contact*/
+    /*Buttons - Contact, Download*/
     .btn {
         width: 145px;
         height: 40px;
     }
 
-    /*Button*/
-    /*Form*/
-    .form-send-success {
-        font-size: 16px;
-    }
-
-    .form .send-error {
-        font-size: 16px;
-    }
-
-    /*Form*/
-    /*Contact*/
+    /*Buttons - Contact, Download*/
     /*Download*/
-    /*Button*/
     .download {
         min-height: 100%;
         min-width: 100%;
         padding: 100px 0;
     }
 
+    /*Button*/
     .download .btn:hover a {
         border-width: 11px;
     }
@@ -1725,18 +1619,14 @@ footer p a:hover {
     /*Download*/
     /*Button Back*/
     #button {
-        width: 48px;
-        height: 48px;
+        width: 50px;
+        height: 50px;
         right: 10px;
     }
 
     #button::after {
         font-size: 1.5em;
-        line-height: 48px;
-    }
-
-    #button:hover {
-        transform: scale(1.1);
+        line-height: 45px;
     }
 
     /*Button Back*/
@@ -1747,46 +1637,20 @@ footer p a:hover {
 
     /*Cookies*/
 
-    body {
-        background: red;
-    }
-
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
 
-    /*Fonts*/
-    h1 {
-        font-size: 20px;
-        margin: 0px;
-    }
-
-    h5 {
-        margin-top: 0px;
-        font-size: 12px;
-    }
-
-    p {
-        font-size: 11px;
-    }
-
-    /*Fonts*/
     /*Menu*/
     .menu {
         width: 100%;
         height: 100%;
     }
 
-    /*Logo*/
-    .menu .nav .logo {
-        margin: 10px calc(50% - 135px) 0;
-        float: clear;
-        height: 0px;
-        width: 0px;
+    .menu .nav {
+        min-height: 550px;
     }
-
-    /*Logo*/
 
     .sidebar {
         width: 100%;
@@ -1794,16 +1658,22 @@ footer p a:hover {
         padding: 0px;
     }
 
-    .menu .nav {
-        min-height: 550px;
+    /*Logo*/
+    .menu .nav .logo {
+        float: clear;
+        margin: 10px calc(50% - 145px) 0;
+        height: 0px;
+        width: 0px;
     }
+
+    /*Logo*/
 
     .menu .nav ul {
         width: 100%;
-        padding: 0px;
-        min-height: 400px;
-        display: inline-block;
+        min-height: 425px;
         margin-top: 10px;
+        padding: 0px;
+        display: inline-block;
     }
 
     .menu .nav ul li {
@@ -1813,9 +1683,9 @@ footer p a:hover {
 
     .menu .nav ul li {
         width: 40%;
-        display: block;
         margin: 0 5%;
         text-align: center;
+        display: block;
     }
 
     .menu .nav ul a * {
@@ -1831,24 +1701,23 @@ footer p a:hover {
     }
 
     .main .hero {
-        top: -50vw;
+        top: -45vw;
     }
 
     .main .hero h1 {
-        font-size: 25px;
-        line-height: 10px;
+        font-size: 30px;
+        line-height: 15px;
     }
 
     .main .hero h4 {
         font-size: 13px;
-        visibility: hidden;
     }
 
     /*Button*/
     #knowme a span {
         width: 45px;
         height: 45px;
-        margin-top: -50px;
+        margin-top: -5px;
         margin-left: -25px;
     }
 
@@ -1859,9 +1728,21 @@ footer p a:hover {
 
     /*Button*/
     /*Jumbotron*/
-    /*About*/
+    /*Fonts - headline (About Me, Technology, Projects, Contact, Download)*/
+    h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    h5 {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    /*Fonts - headline (About Me, Technology, Projects, Contact, Download)*/
+    /*About Me*/
     .about {
-        margin-top: -158px;
+        margin-top: -168px;
         min-height: 100%;
         min-width: 100%;
         padding: 35px;
@@ -1888,17 +1769,17 @@ footer p a:hover {
     }
 
     .about p {
-        font-size: 11px;
+        font-size: 12px;
         text-align: justify;
     }
 
-    /*About*/
-    /*Stack*/
+    /*About Me*/
+    /*Stack Technology*/
     .stack {
         min-height: 750px;
         min-width: 100%;
-        background: #1A1A1A;
         padding: 35px;
+        background: #1A1A1A;
     }
 
     .stack .row {
@@ -1971,25 +1852,15 @@ footer p a:hover {
         bottom: -40px;
     }
 
-    /*Stack*/
+    /*Stack Technology*/
     /*Projects*/
     .projects {
         background-image: url(../images/projects-mobile.png);
         background-position: center;
     }
 
-    .projects .col {
-        width: 100%;
-        height: auto;
-        height: 220px;
-    }
-
-    .projects .col .layer .photo-ico {
-        cursor: pointer;
-        width: 85%;
-        font-size: 12px;
-        text-align: center;
-        margin: 30px auto;
+    .projects h1 {
+        margin-top: 150px;
     }
 
     .photo-1 {
@@ -2007,16 +1878,24 @@ footer p a:hover {
         max-height: 220px;
     }
 
-    .projects h1 {
-        margin-top: 150px;
-    }
-
     .projects .col .layer .photo-ico h5 {
-        font-size: 15px
+        font-size: 17px
     }
 
     .projects p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .projects .col {
+        width: 100%;
+        height: 220px;
+        height: auto;
+    }
+
+    .projects .col .layer .photo-ico {
+        width: 85%;
+        font-size: 12px;
+        margin: 30px auto;
     }
 
     /*Projects*/
@@ -2027,15 +1906,16 @@ footer p a:hover {
     }
 
     .contact .ct-box {
-        width: 280px;
+        width: 350px;
     }
 
     .contact .ct-box form {
         margin-top: 20px;
     }
 
+    /*Contact 2*/
     .contact2 {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .contact2 h4 {
@@ -2043,13 +1923,7 @@ footer p a:hover {
         font-size: 13px;
     }
 
-    /*Button*/
-    .btn {
-        width: 145px;
-        height: 40px;
-    }
-
-    /*Button*/
+    /*Contact 2*/
     /*Form*/
     .form-send-success {
         font-size: 15px;
@@ -2061,14 +1935,21 @@ footer p a:hover {
 
     /*Form*/
     /*Contact*/
+    /*Buttons - Contact, Download*/
+    .btn {
+        width: 145px;
+        height: 40px;
+    }
+
+    /*Buttons - Contact, Download*/
     /*Download*/
-    /*Button*/
     .download {
         min-height: 100%;
         min-width: 100%;
         padding: 100px 0;
     }
 
+    /*Button*/
     .download .btn:hover a {
         border-width: 11px;
     }
@@ -2087,8 +1968,344 @@ footer p a:hover {
         line-height: 45px;
     }
 
-    #button:hover {
-        transform: scale(1.1);
+    /*Button Back*/
+    /*Cookies*/
+    #cookies-message {
+        font-size: 12px;
+    }
+
+    /*Cookies*/
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    /*Menu*/
+    .menu {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu .nav {
+        min-height: 550px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    /*Logo*/
+    .menu .nav .logo {
+        float: clear;
+        margin: 10px calc(50% - 132px) 0;
+        height: 0px;
+        width: 0px;
+    }
+
+    /*Logo*/
+
+    .menu .nav ul {
+        width: 100%;
+        min-height: 425px;
+        margin-top: 10px;
+        padding: 0px;
+        display: inline-block;
+    }
+
+    .menu .nav ul li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .menu .nav ul li {
+        width: 40%;
+        margin: 0 5%;
+        text-align: center;
+        display: block;
+    }
+
+    .menu .nav ul a * {
+        line-height: 100px;
+        text-align: center;
+    }
+
+    /*Menu*/
+    /*Jumbotron*/
+    .main img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .hero {
+        top: -50vw;
+    }
+
+    .main .hero h1 {
+        font-size: 30px;
+        line-height: 15px;
+    }
+
+    .main .hero h4 {
+        font-size: 13px;
+        visibility: hidden;
+    }
+
+    /*Button*/
+    #knowme a span {
+        width: 45px;
+        height: 45px;
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+
+    #knowme a span::before {
+        width: 43px;
+        height: 43px;
+    }
+
+    /*Button*/
+    /*Jumbotron*/
+    /*Fonts*/
+    h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    h5 {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    /*Fonts*/
+    /*About Me*/
+    .about {
+        margin-top: -168px;
+        min-height: 100%;
+        min-width: 100%;
+        padding: 35px;
+    }
+
+    .about .container {
+        padding: 0px;
+    }
+
+    .about .face {
+        min-height: 200px;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .about h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about h6 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    /*About Me*/
+    /*Stack Technology*/
+    .stack {
+        min-height: 750px;
+        min-width: 100%;
+        padding: 35px;
+        background: #1A1A1A;
+    }
+
+    .stack .row {
+        margin: 0 auto;
+        border-left: 1.5px solid #bebebe;
+    }
+
+    .stack .row .col {
+        border-right: 1.5px solid #bebebe;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .skills .icon {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .skills .express img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .skills .redux img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .skills .ajax img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .skills .mern img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .skills h3 {
+        font-size: 14px;
+    }
+
+    .stack #carousel-example-generic2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .stack #carousel-example-generic2 .carousel-inner {
+        height: 100%;
+    }
+
+    .stack #carousel-example-generic2 .carousel-indicators {
+        bottom: -40px;
+    }
+
+    /*Stack Technology*/
+    /*Projects*/
+    .projects {
+        background-image: url(../images/projects-mobile.png);
+        background-position: center;
+    }
+
+    .projects h1 {
+        margin-top: 150px;
+    }
+
+    .photo-1 {
+        background-image: url("../images/djwd-logo-black.png");
+        max-height: 220px;
+    }
+
+    .photo-2 {
+        background-image: url("../images/laptop-img.jpg");
+        max-height: 220px;
+    }
+
+    .photo-3 {
+        background-image: url("../images/djwd-logo-white.png");
+        max-height: 220px;
+    }
+
+    .projects .col .layer .photo-ico h5 {
+        font-size: 15px;
+    }
+
+    .projects p {
+        font-size: 11px;
+    }
+
+    .projects .col {
+        width: 100%;
+        height: 220px;
+        height: auto;
+    }
+
+    .projects .col .layer .photo-ico {
+        width: 85%;
+        font-size: 12px;
+        margin: 30px auto;
+    }
+
+    /*Projects*/
+    /*Contact*/
+    .contact {
+        padding: 35px 0;
+        min-height: 100%;
+    }
+
+    .contact .ct-box {
+        width: 300px;
+    }
+
+    .contact .ct-box form {
+        margin-top: 20px;
+    }
+
+    /*Contact 2*/
+    .contact2 {
+        margin-top: 60px;
+    }
+
+    .contact2 h4 {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    /*Contact 2*/
+    /*Form*/
+    .form-send-success {
+        font-size: 15px;
+    }
+
+    .form .send-error {
+        font-size: 15px;
+    }
+
+    /*Form*/
+    /*Contact*/
+    /*Buttons - Contact, Download*/
+    .btn {
+        width: 145px;
+        height: 40px;
+    }
+
+    /*Buttons - Contact, Download*/
+    /*Download*/
+    .download {
+        min-height: 100%;
+        min-width: 100%;
+        padding: 100px 0;
+    }
+
+    /*Button*/
+    .download .btn:hover a {
+        border-width: 11px;
+    }
+
+    /*Button*/
+    /*Download*/
+    /*Button Back*/
+    #button {
+        width: 45px;
+        height: 45px;
+        right: 10px;
+    }
+
+    #button::after {
+        font-size: 1.5em;
+        line-height: 45px;
     }
 
     /*Button Back*/
@@ -2100,27 +2317,4 @@ footer p a:hover {
     /*Cookies*/
 }
 
-
-
-
-
-
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    body {
-        background: violet;
-    }
-}
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-    /*
-    body {
-        background: green;
-    }
-*/
-}
-
-
-/*Mobile*/
+/*Media*/
