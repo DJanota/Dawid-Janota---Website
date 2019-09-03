@@ -8,34 +8,27 @@ $(function () {
     });
 });
 $('a[href*="#"]')
-    // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function (event) {
-        // On-page links
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
         ) {
-            // Figure out element to scroll to
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
             if (target.length) {
-                // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000, function () {
-                    // Callback after animation
-                    // Must change focus!
                     var $target = $(target);
                     $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
+                    if ($target.is(":focus")) {
                         return false;
                     } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
+                        $target.attr('tabindex', '-1');
+                        $target.focus();
                     };
                 });
             }
@@ -47,7 +40,6 @@ $('a[href*="#"]')
     const form = document.querySelector('#contactForm');
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
 
-    //Wyłączamy domyślną walidację
     form.setAttribute('novalidate', true);
 
     const displayFieldError = function (elem) {
@@ -94,8 +86,7 @@ $('a[href*="#"]')
     });
 
     const checkFieldsErrors = function (elements) {
-        //Zmienna true. Pętla po wszystkich polach
-        //Jeżeli któreś z pól jest błędne, przełączamy zmienną na false
+
         let fieldsAreValid = true;
 
         [...elements].forEach(elem => {
@@ -115,7 +106,6 @@ $('a[href*="#"]')
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        //Wszystkie pola poprawne
         if (checkFieldsErrors(inputs)) {
             const elements = form.querySelectorAll('input:not(:disabled), textarea:not(:disabled), select:not(:disabled)');
 
@@ -147,7 +137,6 @@ $('a[href*="#"]')
 
                     } else {
                         if (ret.status === 'ok') {
-                            //komunikat powodzenia
                             const div = document.createElement('div');
                             div.classList.add('form-send-success');
 
@@ -157,7 +146,6 @@ $('a[href*="#"]')
                         }
 
                         if (ret.status === 'error') {
-                            //komunikat błędu, niepowodzenia
                             const div = document.createElement('div');
                             div.classList.add('send-error');
                             div.innerText = 'The message has not been sent!<span>Please try again.</span>';
