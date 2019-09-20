@@ -12,7 +12,7 @@
 }
 
 .face-1 {
-    background-image: url("../images/Dawid%20Janota-img.jpg");
+    background-image: url("../images/Dawid-Janota-img.png");
 }
 
 /*Photos*/
@@ -1131,7 +1131,7 @@ footer p a:hover {
     /*About Me*/
     /*Projects*/
     .projects {
-        background-image: url(../images/projects-mobile.png);
+        background-image: url(../images/projects-mobile-img.png);
         background-position: center;
     }
 
@@ -1386,7 +1386,7 @@ footer p a:hover {
     /*Stack Technology*/
     /*Projects*/
     .projects {
-        background-image: url(../images/projects-mobile.png);
+        background-image: url(../images/projects-mobile-img.png);
         background-position: center;
     }
 
@@ -1726,7 +1726,7 @@ footer p a:hover {
     /*Stack Technology*/
     /*Projects*/
     .projects {
-        background-image: url(../images/projects-mobile.png);
+        background-image: url(../images/projects-mobile-img.png);
         background-position: center;
     }
 
@@ -2075,7 +2075,7 @@ footer p a:hover {
     /*Stack Technology*/
     /*Projects*/
     .projects {
-        background-image: url(../images/projects-mobile.png);
+        background-image: url(../images/projects-mobile-img.png);
         background-position: center;
     }
 
