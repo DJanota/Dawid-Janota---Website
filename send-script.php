@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$mailToSend = 'poczta@dawidjanota.pl';
+$mailToSend = 'poczta@dawidjanota.com';
 
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
