@@ -4,12 +4,12 @@ Dawid Janota - Web Development
 
 Technologies: HTML5, CSS3, Bootstrap JavaScript, jQuery, Ajax, PHP, Font Awesome, Google Font API, Google Tag Manager, Apache 2, Google Analytics.
 
-Website-link: https://www.dawidjanota.pl/
+Website-link: https://www.dawidjanota.com/
 Github-link: https://djanota.github.io/Dawid_Janota-Web_Developer_Portfolio/
 
 (PL) Strona internetowa pełniąca funkcję portfolio. Witryna zawiera zestaw projektów (strony "www" i aplikacje internetowe) stworzonych przez Dawida Janota. 
 
 Technologie: HTML5, CSS3, Bootstrap JavaScript, jQuery, Ajax, PHP, Font Awesome, Google Font API, Google Tag Manager, Apache 2, Google Analytics.
 
-Website-link: https://www.dawidjanota.pl/
+Website-link: https://www.dawidjanota.com/
 Github-link: https://djanota.github.io/Dawid_Janota-Web_Developer_Portfolio/
