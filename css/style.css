@@ -92,6 +92,7 @@
 .main img {
     width: 100%;
     height: 100%;
+    outline: 0;
 }
 
 .main .hero {
@@ -276,6 +277,7 @@ h5 {
 .about {
     margin-top: -298px;
     padding: 10px 0px 20px;
+    outline: 0;
 }
 
 .about {
@@ -332,6 +334,7 @@ h5 {
 .stack {
     min-height: 100%;
     padding: 35px;
+    outline: 0;
     background: #1A1A1A;
 }
 
@@ -469,6 +472,7 @@ h5 {
     background-image: url(../images/projects-img.png);
     padding: 0px;
     height: 100%;
+    outline: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -554,6 +558,7 @@ h5 {
 .contact {
     padding: 35px;
     height: 800px;
+    outline: 0;
     background-color: #1A1A1A;
 }
 
@@ -914,6 +919,7 @@ h5 {
     padding-bottom: 5%;
     height: 350px;
     width: 100%;
+    outline: 0;
     text-decoration: none;
 }
 
