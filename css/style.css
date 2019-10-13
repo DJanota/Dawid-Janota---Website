@@ -25,13 +25,14 @@
 }
 
 /*Menu*/
-.menu {
+.header-section {
     background-color: #000;
     color: #fff;
     width: 100%;
+    height: 100%;
 }
 
-.menu .nav {
+.header-section .bar .navbar-default .navbar-header .navbar-nav {
     width: 100%;
     height: 120px;
     margin: 0 auto;
@@ -39,16 +40,16 @@
 
 .sidebar {
     width: 100%;
-    padding: 0 80px;
+    padding: 0px 80px;
 }
 
 /*Logo*/
-.menu .sidebar .nav .logo a {
+.header-section .sidebar .bar .navbar-default .logo a {
     background-image: url("../images/logo.png");
     background-size: cover;
     height: 90px;
     width: 280px;
-    margin: 15px 0px 0px 0px;
+    margin: 14px 0px 0px 0px;
     line-height: 100px;
     float: left;
     display: inline-block;
@@ -56,7 +57,13 @@
 }
 
 /*Logo*/
-.menu .nav ul {
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.header-section .bar .navbar-nav ul {
     margin: 0px;
     padding: 15px;
     height: 120px;
@@ -64,29 +71,52 @@
     display: inline-block;
 }
 
-.menu .nav ul li {
+.header-section .bar ul li {
     display: inline-block;
     float: left;
-    padding: 5px 25px 90px;
-    height: 100px;
+    padding: 15px 25px 0px;
+    height: 120px;
 }
 
-.menu .nav ul li:hover {
+.header-section .bar ul li:hover {
     cursor: pointer;
     border-bottom: 5px dotted #b88b58;
 }
 
-.menu .nav ul a * {
+.header-section .bar ul a * {
     font-weight: 400;
     font-family: "Montserrat";
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    height: 105px;
-    line-height: 80px;
+    height: 0px 90px;
+    line-height: 90px;
 }
 
+/*Hamburger*/
+.navbar-default .navbar-toggle {
+    margin-top: 40px;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-toggle:hover {
+    margin-top: 40px;
+    background-color: #000;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #b88b58;
+}
+
+.navbar-default .navbar-toggle .icon-bar:hover {
+    background-color: #fff;
+}
+
+/*Hamburger*/
 /*Menu*/
 /*Jumbotron*/
 .main img {
@@ -1206,52 +1236,51 @@ footer p a:hover {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     /*Menu*/
-    .menu {
+    .header-section {
         width: 100%;
         height: 100%;
     }
 
-    .menu .nav {
-        min-height: 480px;
+    .header-section .bar .navbar-nav {
+        min-height: 0px;
     }
 
     .sidebar {
         width: 100%;
         height: 100%;
-        padding: 0px;
+        padding: 0 80px;
     }
 
     /*Logo*/
-    .menu .nav .logo {
+    .header-section .bar .logo {
         float: clear;
-        margin: 10px calc(50% - 140px) 0;
-        height: 0px;
-        width: 0px;
+        margin: 0px calc(15% - -115px) 0;
+        height: 100px;
+        width: 300px;
     }
 
     /*Logo*/
 
-    .menu .nav ul {
-        width: 100%;
+    .header-section .bar ul {
+        width: 105%;
         min-height: 355px;
         margin-top: 10px;
-        padding: 0 100px;
         display: inline-block;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 50%;
         margin: 0;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 40%;
         margin: 0 5%;
         text-align: center;
         display: block;
     }
 
-    .menu .nav ul a * {
+    .header-section .bar ul a * {
         line-height: 100px;
         text-align: center;
     }
@@ -1523,32 +1552,32 @@ footer p a:hover {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     /*Menu*/
-    .menu {
+    .header-section {
         width: 100%;
         height: 100%;
     }
 
-    .menu .nav {
-        min-height: 480px;
+    .header-section .bar .navbar-nav {
+        min-height: 0px;
     }
 
     .sidebar {
         width: 100%;
         height: 100%;
-        padding: 0px;
+        padding: 0px 20px 10px;
     }
 
     /*Logo*/
-    .menu .nav .logo {
+    .header-section .bar .logo {
         float: clear;
-        margin: 10px calc(50% - 145px) 0;
+        margin: 0px calc(50% - 135px) 0;
         height: 0px;
         width: 0px;
     }
 
     /*Logo*/
 
-    .menu .nav ul {
+    .header-section .bar .navbar-nav ul {
         width: 100%;
         min-height: 355px;
         margin-top: 10px;
@@ -1556,19 +1585,19 @@ footer p a:hover {
         display: inline-block;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 50%;
         margin: 0;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 40%;
         margin: 0 5%;
         text-align: center;
         display: block;
     }
 
-    .menu .nav ul a * {
+    .header-section .bar ul a * {
         line-height: 100px;
         text-align: center;
     }
@@ -1581,7 +1610,7 @@ footer p a:hover {
     }
 
     .main .hero {
-        top: -45vw;
+        top: -42vw;
     }
 
     .main .hero h1 {
@@ -1867,32 +1896,31 @@ footer p a:hover {
 @media (max-width: 575.98px) {
 
     /*Menu*/
-    .menu {
+    .header-section {
         width: 100%;
         height: 100%;
     }
 
-    .menu .nav {
-        min-height: 550px;
+    .header-section .bar .navbar-nav {
+        min-height: 0px;
     }
 
     .sidebar {
         width: 100%;
         height: 100%;
-        padding: 0px;
+        padding: 0px 20px 10px;
     }
 
     /*Logo*/
-    .menu .nav .logo {
+    .header-section .bar .logo {
         float: clear;
-        margin: 10px calc(50% - 133px) 0;
+        margin: 0px calc(50% - 135px) 0;
         height: 0px;
         width: 0px;
     }
 
     /*Logo*/
-
-    .menu .nav ul {
+    .header-section .bar .navbar-nav ul {
         width: 100%;
         min-height: 425px;
         margin-top: 10px;
@@ -1900,24 +1928,24 @@ footer p a:hover {
         display: inline-block;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 50%;
         margin: 0;
     }
 
-    .menu .nav ul li {
+    .header-section .bar ul li {
         width: 40%;
         margin: 0 5%;
         text-align: center;
         display: block;
     }
 
-    .menu .nav ul a * {
+    .header-section .bar ul a * {
         line-height: 100px;
         text-align: center;
     }
 
-    .menu .nav ul a li {
+    .header-section .bar ul a li {
         padding: 0px;
     }
 
@@ -1929,7 +1957,7 @@ footer p a:hover {
     }
 
     .main .hero {
-        top: -50vw;
+        top: -42vw;
     }
 
     .main .hero h1 {
