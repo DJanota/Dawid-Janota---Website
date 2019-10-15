@@ -1123,7 +1123,7 @@ footer p a:hover {
     }
 
     /*Logo*/
-    .menu .nav .logo {
+    .header-section .bar .logo {
         float: left;
         margin-left: 0px;
         width: 0px;
@@ -1248,23 +1248,23 @@ footer p a:hover {
     .sidebar {
         width: 100%;
         height: 100%;
-        padding: 0 80px;
+        padding: 0px 20px 10px;
     }
 
     /*Logo*/
     .header-section .bar .logo {
         float: clear;
-        margin: 0px calc(15% - -115px) 0;
-        height: 100px;
-        width: 300px;
+        margin: 0px calc(0% - 0px) 0;
+        height: 0px;
+        min-width: 0px;
     }
 
     /*Logo*/
 
     .header-section .bar ul {
-        width: 105%;
+        width: 103%;
         min-height: 355px;
-        margin-top: 10px;
+        margin-top: 0px;
         display: inline-block;
     }
 
